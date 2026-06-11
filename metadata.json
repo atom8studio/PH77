@@ -1,0 +1,6 @@
+{
+  "name": "Nexa AI Consultancy",
+  "description": "A trendy, professional, and minimalistic website for an AI consulting firm serving Malaysian mid-sized enterprises.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -10,16 +10,16 @@ export default function Header() {
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Services</a>
-          <a href="#" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Approach</a>
-          <a href="#" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Case Studies</a>
-          <a href="#" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Expertise</a>
+          <a href="#services" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Services</a>
+          <a href="#approach" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Approach</a>
+          <a href="#case-studies" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Case Studies</a>
+          <a href="#contact" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Contact</a>
         </nav>
         
         <div className="flex items-center">
-          <button className="text-sm font-medium text-white bg-neutral-950 px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">
+          <a href="#contact" className="text-sm font-medium text-white bg-neutral-950 px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">
             Book Assessment
-          </button>
+          </a>
         </div>
       </div>
     </header>

@@ -27,20 +27,20 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-medium mb-6 font-display mt-2 md:mt-0">Company</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Our Approach</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
+              <li><a href="#expertise" className="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
+              <li><a href="#approach" className="hover:text-white transition-colors">Our Approach</a></li>
+              <li><a href="#case-studies" className="hover:text-white transition-colors">Case Studies</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-white font-medium mb-6 font-display mt-2 md:mt-0">Contact</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><a href="#" className="hover:text-white transition-colors">hello@nexaconsult.com.my</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Kuala Lumpur, Malaysia</a></li>
+              <li><a href="mailto:hello@nexaconsult.com.my" className="hover:text-white transition-colors">hello@nexaconsult.com.my</a></li>
+              <li><span className="text-neutral-500">Kuala Lumpur, Malaysia</span></li>
               <li className="mt-6">
-                <a href="#" className="inline-block border-b border-neutral-600 pb-1 hover:text-white hover:border-white transition-colors">
+                <a href="#contact" className="inline-block border-b border-neutral-600 pb-1 hover:text-white hover:border-white transition-colors">
                   Get in touch
                 </a>
               </li>

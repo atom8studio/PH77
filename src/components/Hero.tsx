@@ -55,13 +55,13 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <button className="inline-flex justify-center items-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors cursor-pointer">
+              <a href="#contact" className="inline-flex justify-center items-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors cursor-pointer text-center">
                 Book A Strategy Session
                 <ArrowRight className="w-4 h-4" />
-              </button>
-              <button className="inline-flex justify-center items-center gap-2 rounded-full px-8 py-3.5 text-sm font-medium text-neutral-900 border border-neutral-200 hover:bg-neutral-100 transition-colors cursor-pointer">
+              </a>
+              <a href="#services" className="inline-flex justify-center items-center gap-2 rounded-full px-8 py-3.5 text-sm font-medium text-neutral-900 border border-neutral-200 hover:bg-neutral-100 transition-colors cursor-pointer text-center">
                 Explore Core Services
-              </button>
+              </a>
             </motion.div>
           </div>
 

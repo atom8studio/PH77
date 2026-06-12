@@ -30,7 +30,7 @@ const tiers = [
 
 export default function Approach() {
   return (
-    <section className="py-24 bg-neutral-950 text-white">
+    <section id="approach" className="py-24 bg-neutral-950 text-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-20 text-center max-w-3xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-display font-medium mb-6">Our Engagement Model</h2>

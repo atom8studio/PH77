@@ -30,18 +30,15 @@ const cases = [
 
 export default function CaseStudies() {
   return (
-    <section className="py-24 bg-white">
+    <section id="case-studies" className="py-24 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
           <div className="max-w-2xl">
-            <h2 className="text-3xl font-display font-medium text-neutral-950 mb-4">Proven Outcomes</h2>
+            <h2 className="text-3xl font-display font-medium text-neutral-950 mb-4">Case Studies</h2>
             <p className="text-neutral-600 font-light text-lg">
               We focus on practical, business-driven transformation. Here is how our approach delivers measurable impact.
             </p>
           </div>
-          <button className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-neutral-900 hover:text-neutral-600 transition-colors">
-            View all client stories <ArrowUpRight className="w-4 h-4" />
-          </button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -63,11 +60,7 @@ export default function CaseStudies() {
                 <h3 className="text-lg font-medium text-neutral-900 mb-2">The Solution</h3>
                 <p className="text-neutral-600 font-light text-sm">{study.solution}</p>
               </div>
-              <div className="pt-6 border-t border-neutral-200">
-                <div className="text-4xl font-display font-light text-neutral-900 mb-1">{study.metric}</div>
-                <div className="text-sm text-neutral-500">{study.metricLabel}</div>
-              </div>
-              <div className="flex flex-wrap gap-2 mt-6">
+              <div className="flex flex-wrap gap-2 mt-6 pt-6 border-t border-neutral-100">
                 {study.tags.map(tag => (
                   <span key={tag} className="text-xs font-medium text-neutral-500 bg-white border border-neutral-200 px-2 py-1 rounded-md">
                     {tag}
@@ -77,10 +70,6 @@ export default function CaseStudies() {
             </motion.div>
           ))}
         </div>
-        
-        <button className="mt-10 md:hidden w-full inline-flex justify-center items-center gap-2 text-sm font-medium text-neutral-900 px-6 py-3 border border-neutral-200 rounded-full hover:bg-neutral-50 transition-colors">
-          View all client stories <ArrowUpRight className="w-4 h-4" />
-        </button>
       </div>
     </section>
   );

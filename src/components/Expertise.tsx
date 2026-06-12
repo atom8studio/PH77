@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export default function Expertise() {
   return (
-    <section className="py-24 bg-neutral-50 relative overflow-hidden">
+    <section id="expertise" className="py-24 bg-neutral-50 relative overflow-hidden scroll-mt-20">
       <div className="absolute inset-0 max-w-4xl mx-auto -z-10 opacity-30 mix-blend-multiply">
         <div className="absolute top-0 right-0 w-96 h-96 bg-neutral-300 rounded-full blur-3xl mix-blend-multiply" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-neutral-200 rounded-full blur-3xl mix-blend-multiply" />

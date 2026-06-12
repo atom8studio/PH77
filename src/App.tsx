@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Expertise from './components/Expertise';
 import Approach from './components/Approach';
 import CaseStudies from './components/CaseStudies';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <Services />
         <Approach />
         <CaseStudies />
+        <Contact />
       </main>
       <Footer />
     </div>

@@ -20,10 +20,10 @@ export default function Expertise() {
             <div>
               <h2 className="text-sm font-bold tracking-widest text-neutral-400 uppercase mb-4">Our Positioning</h2>
               <h3 className="text-3xl md:text-5xl font-display font-medium text-neutral-950 mb-6 leading-tight">
-                We partner with leadership teams to translate AI ambition into business outcomes.
+                We bridge the gap between business objectives and technical execution.
               </h3>
               <p className="text-lg text-neutral-600 font-light leading-relaxed mb-8">
-                Combining strategic advisory with practical implementation, we bridge the gap between business objectives and technical execution.
+                Combining strategic advisory with practical implementation, we help organisations adopt AI with confidence.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

@@ -26,7 +26,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
             >
               <span className="inline-flex items-center rounded-full px-4 py-1.5 text-xs font-semibold text-neutral-800 bg-neutral-200/60 border border-neutral-300/30 mb-8 font-display tracking-wide uppercase">
-                Strategic Advisory • Technical Implementation • Responsible Governance
+                Strategic Advisory • Technical Implementation 
               </span>
             </motion.div>
             
@@ -36,8 +36,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Move beyond AI <br/>
-              <span className="text-gradient">experimentation</span>
+              AI Potential <br/>
+              <span className="text-gradient">into Business Impact</span>
             </motion.h1>
             
             <motion.p 
@@ -46,7 +46,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              We partner with forward-thinking enterprises to build clear, data-backed blueprints and deploy highly tailored AI pilots that empower teams and directly improve operational yields
+              We help organisations identify high-impact AI opportunities, implement practical solutions, and realise measurable business outcomes. No hype, just results.
             </motion.p>
             
             <motion.div 
@@ -56,7 +56,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <a href="#contact" className="inline-flex justify-center items-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors cursor-pointer text-center">
-                Book A Strategy Session
+                Book A Session
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a href="#services" className="inline-flex justify-center items-center gap-2 rounded-full px-8 py-3.5 text-sm font-medium text-neutral-900 border border-neutral-200 hover:bg-neutral-100 transition-colors cursor-pointer text-center">

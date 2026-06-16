@@ -20,13 +20,10 @@ export default function Expertise() {
             <div>
               <h2 className="text-sm font-bold tracking-widest text-neutral-400 uppercase mb-4">Our Positioning</h2>
               <h3 className="text-3xl md:text-5xl font-display font-medium text-neutral-950 mb-6 leading-tight">
-                We are not just an AI software development company.
+                We partner with leadership teams to translate AI ambition into business outcomes.
               </h3>
               <p className="text-lg text-neutral-600 font-light leading-relaxed mb-8">
-                We are an <strong className="font-medium text-neutral-900">AI transformation partner</strong> that helps mid-sized enterprises navigate the noise. We identify where AI creates genuine business value, implement solutions that generate measurable ROI, and build the critical governance capabilities required for long-term success.
-              </p>
-              <p className="text-neutral-500 font-light text-sm">
-                We act as your trusted advisor, bridging the gap between high-level business strategy and technical execution.
+                Combining strategic advisory with practical implementation, we bridge the gap between business objectives and technical execution.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

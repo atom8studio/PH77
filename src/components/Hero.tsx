@@ -37,7 +37,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               Move beyond AI <br/>
-              <span className="text-gradient">experimentation.</span>
+              <span className="text-gradient">experimentation</span>
             </motion.h1>
             
             <motion.p 
@@ -46,7 +46,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              We partner with forward-thinking enterprises to build clear, data-backed blueprints and deploy highly tailored AI pilots that empower teams and directly improve operational yields.
+              We partner with forward-thinking enterprises to build clear, data-backed blueprints and deploy highly tailored AI pilots that empower teams and directly improve operational yields
             </motion.p>
             
             <motion.div 

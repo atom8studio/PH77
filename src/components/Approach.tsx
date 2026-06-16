@@ -5,7 +5,7 @@ const tiers = [
   {
     name: "Tier 1: Opportunity Assessment",
     duration: "2–6 weeks",
-    objective: "Identify and prioritize high-value AI opportunities.",
+    objective: "Identify and prioritise high-value AI opportunities.",
     description: "Before throwing money at tools, we audit your business. We assess tech stack readiness, data pipelines, and security governance to create a clear AI Transformation Blueprint.",
     icon: Search,
     deliverable: "AI Transformation Blueprint"
@@ -19,7 +19,7 @@ const tiers = [
     deliverable: "Production-ready pilot with measurable outcomes"
   },
   {
-    name: "Tier 3: Transformation Program",
+    name: "Tier 3: Transformation Programme",
     duration: "Long-term Rollout",
     objective: "Enterprise-wide AI adoption and operational resilience.",
     description: "The long-term strategy playbook. We handle change management, continuous retraining, and governance implementation to ensure staff fully adopt the tools and the technology actually sticks.",

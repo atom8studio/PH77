@@ -5,7 +5,7 @@ const cases = [
   {
     client: "Healthcare Provider",
     challenge: "Handling sensitive patient data while reducing compliance risk and operational drag.",
-    solution: "Implemented an AI governance framework and secure Document Summarization tools locally.",
+    solution: "Implemented an AI governance framework and secure Document Summarisation tools locally.",
     metric: "40%",
     metricLabel: "Reduction in compliance audit times",
     tags: ["Governance", "Healthcare", "Data Privacy"]

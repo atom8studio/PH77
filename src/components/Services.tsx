@@ -12,7 +12,7 @@ import {
 const services = [
   {
     title: "AI Opportunity & Readiness",
-    description: "Identify where AI creates the greatest business impact and map a prioritized implementation roadmap.",
+    description: "Identify where AI creates the greatest business impact and map a prioritised implementation roadmap.",
     icon: Target,
   },
   {
@@ -36,8 +36,8 @@ const services = [
     icon: Database,
   },
   {
-    title: "Software Modernization",
-    description: "Modernize legacy applications and internal systems by injecting intelligent layers and LLM capabilities.",
+    title: "Software Modernisation",
+    description: "Modernise legacy applications and internal systems by injecting intelligent layers and LLM capabilities.",
     icon: Laptop,
   },
   {

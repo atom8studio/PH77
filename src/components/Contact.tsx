@@ -31,10 +31,13 @@ export default function Contact() {
               Get in Touch
             </span>
             <h2 className="text-3xl sm:text-5xl font-display font-medium text-neutral-950 mb-6 tracking-tight">
-              Let's craft your AI roadmap.
+              Start the Conversation
             </h2>
             <p className="text-neutral-600 font-light text-base leading-relaxed mb-10">
-              Whether you are ready to launch an AI pilot, need secure knowledge assistants, or want to audit your current system's capabilities, we are here to support your transition.
+              Whether you're identifying opportunities, validating a business case, or implementing a solution, we're here to help.
+            </p>
+            <p className="text-neutral-600 font-light text-base leading-relaxed mb-10">
+              Get in touch to discuss your goals, challenges and ideas, and let's see where AI can create meaningful value for your organisation.
             </p>
 
             <div className="space-y-6">
@@ -49,25 +52,8 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-
-              <div className="flex gap-4 items-start">
-                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white border border-neutral-200/50 text-neutral-800 shadow-xs shrink-0">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-medium text-neutral-950">Presence</h4>
-                  <p className="text-sm text-neutral-500 font-light">
-                    Kuala Lumpur, Malaysia
-                  </p>
-                </div>
-              </div>
             </div>
 
-            <div className="mt-12 p-6 rounded-2xl bg-neutral-100/50 border border-neutral-200/30">
-              <p className="text-xs text-neutral-500 font-light leading-relaxed">
-                <strong>Our response policy:</strong> We respect your schedule. We review all incoming blueprints and inquiries on the same day and respond within one business day.
-              </p>
-            </div>
           </div>
 
           {/* Form column */}

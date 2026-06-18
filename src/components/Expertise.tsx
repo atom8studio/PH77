@@ -20,31 +20,31 @@ export default function Expertise() {
             <div>
               <h2 className="text-sm font-bold tracking-widest text-neutral-400 uppercase mb-4">Our Positioning</h2>
               <h3 className="text-3xl md:text-5xl font-display font-medium text-neutral-950 mb-6 leading-tight">
-                We bridge the gap between business objectives and technical execution.
+                Adopt AI with Confidence
               </h3>
               <p className="text-lg text-neutral-600 font-light leading-relaxed mb-8">
-                Combining strategic advisory with practical implementation, we help organisations adopt AI with confidence.
+                We translate business goals into practical AI solutions, aligning strategy with seamless execution.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
                   <div className="text-3xl font-display font-light text-neutral-900 mb-2">ROI</div>
-                  <div className="text-sm text-neutral-500">Measurable returns over experimentation</div>
+                  <div className="text-sm text-neutral-500">Measurable business outcomes</div>
                 </div>
                 <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
-                  <div className="text-3xl font-display font-light text-neutral-900 mb-2">Trust</div>
-                  <div className="text-sm text-neutral-500">Secure, locally hosted integrations</div>
+                  <div className="text-3xl font-display font-light text-neutral-900 mb-2">Execution</div>
+                  <div className="text-sm text-neutral-500">More agile. Faster delivery</div>
                 </div>
               </div>
               <div className="space-y-4 lg:mt-8">
                 <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
                   <div className="text-3xl font-display font-light text-neutral-900 mb-2">Scale</div>
-                  <div className="text-sm text-neutral-500">Infrastructure built for future growth</div>
+                  <div className="text-sm text-neutral-500">Built for sustainable adoption</div>
                 </div>
                 <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
-                  <div className="text-3xl font-display font-light text-neutral-900 mb-2">People</div>
-                  <div className="text-sm text-neutral-500">Change management at the core</div>
+                  <div className="text-3xl font-display font-light text-neutral-900 mb-2">Partnership</div>
+                  <div className="text-sm text-neutral-500">From problem definition to deployment</div>
                 </div>
               </div>
             </div>

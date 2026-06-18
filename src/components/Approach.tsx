@@ -3,29 +3,30 @@ import { Search, Rocket, Building2 } from 'lucide-react';
 
 const tiers = [
   {
-    name: "Tier 1: Opportunity Assessment",
+    name: "Phase 1: Opportunity Assessment",
     duration: "2–6 weeks",
-    objective: "Identify and prioritise high-value AI opportunities.",
-    description: "Before throwing money at tools, we audit your business. We assess tech stack readiness, data pipelines, and security governance to create a clear AI Transformation Blueprint.",
+    objective: "Identify and prioritise high-value AI opportunities",
+    description: "We assess your workflows, systems and data to identify where AI can create real business value and define a clear implementation roadmap",
     icon: Search,
-    deliverable: "AI Transformation Blueprint"
+    deliverable: "AI opportunity roadmap"
   },
   {
-    name: "Tier 2: Pilot Delivery",
+    name: "Phase 2: Pilot Delivery",
     duration: "Targeted Implementation",
-    objective: "Validate ROI through working software.",
-    description: "We deploy working AI solutions into your secure local cloud environment—from knowledge assistants answering queries via SOPs to automated pipeline handlers and intelligent workflow redesigns.",
+    objective: "Validate value through working solutions",
+    description: "We design and deploy practical AI tools such as internal assistants, workflow automation and document processing systems",
     icon: Rocket,
-    deliverable: "Production-ready pilot with measurable outcomes"
+    deliverable: "Working pilot with measurable outcomes"
   },
   {
-    name: "Tier 3: Transformation Programme",
+    name: "Phase 3: Scale & Adoption",
     duration: "Long-term Rollout",
-    objective: "Enterprise-wide AI adoption and operational resilience.",
-    description: "The long-term strategy playbook. We handle change management, continuous retraining, and governance implementation to ensure staff fully adopt the tools and the technology actually sticks.",
+    objective: "Expand successful pilots into real operations",
+    description: "We help teams integrate proven solutions into day-to-day workflows and support broader organisational adoption",
     icon: Building2,
-    deliverable: "Sustainable AI-enabled operating model"
+    deliverable: "Scaled, operational AI use cases"
   }
+
 ];
 
 export default function Approach() {
@@ -35,7 +36,7 @@ export default function Approach() {
         <div className="mb-20 text-center max-w-3xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-display font-medium mb-6">Our Engagement Model</h2>
           <p className="text-neutral-400 font-light text-lg">
-            A structured, phased approach to ensure you only invest in technology that your data can support and your team will actually use.
+            We offer flexible engagement models tailored to your needs, from short-term assessments to long-term partnerships. Our phased approach ensures we deliver value at every stage of your AI journey.
           </p>
         </div>
 

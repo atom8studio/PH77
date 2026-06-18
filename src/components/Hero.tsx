@@ -3,11 +3,10 @@ import { ArrowRight, HelpCircle } from 'lucide-react';
 
 const questions = [
   { id: "1", text: "Where should we invest in AI?" },
-  { id: "2", text: "Which processes should we automate?" },
-  { id: "3", text: "What risks must we manage?" },
+  { id: "2", text: "What AI opportunities will create the most value?" },
+  { id: "3", text: "How do we help our teams adopt AI?" },
   { id: "4", text: "How do we achieve measurable ROI?" },
-  { id: "5", text: "How do we prepare our workforce for AI adoption?" },
-  { id: "6", text: "How do we govern AI responsibly and securely?" }
+  { id: "5", text: "How do we move from pilot to adoption?" }
 ];
 
 export default function Hero() {
@@ -37,7 +36,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               AI Potential <br/>
-              <span className="text-gradient">into Business Impact</span>
+              <span className="text-gradient">to Business Impact</span>
             </motion.h1>
             
             <motion.p 
@@ -98,12 +97,6 @@ export default function Hero() {
                     </p>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-6 pt-5 border-t border-neutral-100 text-center">
-                <p className="text-xs text-neutral-500 font-light">
-                  No empty speculation. Just actionable answers.
-                </p>
               </div>
             </div>
           </motion.div>

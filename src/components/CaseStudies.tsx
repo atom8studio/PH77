@@ -3,28 +3,28 @@ import { ArrowUpRight } from 'lucide-react';
 
 const cases = [
   {
-    client: "Healthcare Provider",
-    challenge: "Handling sensitive patient data while reducing compliance risk and operational drag.",
-    solution: "Implemented an AI governance framework and secure Document Summarisation tools locally.",
-    metric: "40%",
-    metricLabel: "Reduction in compliance audit times",
-    tags: ["Governance", "Healthcare", "Data Privacy"]
-  },
-  {
     client: "Financial Services",
-    challenge: "Manual lead qualification and complex internal approval processes slowing down revenue.",
-    solution: "Deployed autonomous lead qualification agents and automated internal approval workflows.",
+    challenge: "Gathering information from multiple sources to support trade approvals resulted in slow turnaround times and missed opportunities.",
+    solution: "Deployed autonomous workflows to collect relevant information and deliver actionable insights to decision-makers in real time.",
     metric: "3x",
-    metricLabel: "Faster turnaround on approvals",
-    tags: ["Automation", "Finance", "Workflow"]
+    metricLabel: "Faster trade approval decisions",
+    tags: ["Automation", "Trading", "Workflow"]
   },
   {
-    client: "Property Developer",
-    challenge: "Long employee onboarding and difficulty accessing dispersed SOPs and guidelines.",
-    solution: "Built a secure, internal AI Knowledge Assistant for instant employee self-service.",
+    client: "Logistics",
+    challenge: "Employee onboarding was slowed by fragmented SOPs, policies and operational documentation spread across multiple systems.",
+    solution: "Built an internal knowledge assistant that provides instant access to company information and operational guidance.",
     metric: "60%",
-    metricLabel: "Fewer IT & HR support tickets",
-    tags: ["Knowledge Agent", "Real Estate", "HR"]
+    metricLabel: "Faster access to operational information",
+    tags: ["Knowledge Assistant", "Operations", "Employee Enablement"]
+  },
+  {
+    client: "Professional Services",
+    challenge: "Employees were managing tasks, emails and calendars across multiple tools, creating administrative overhead and missed follow-ups.",
+    solution: "Built an AI personal assistant accessible through WhatsApp and Telegram to manage tasks, emails, calendars and reminders from a single interface.",
+    metric: "2 hrs",
+    metricLabel: "Saved per employee per week",
+    tags: ["Personal Assistant", "Productivity", "Workflow Automation"]
   }
 ];
 

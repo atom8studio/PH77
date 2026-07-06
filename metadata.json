@@ -1,6 +1,6 @@
 {
-  "name": "Nexa AI Consultancy",
-  "description": "A trendy, professional, and minimalistic website for an AI consulting firm serving Malaysian mid-sized enterprises.",
+  "name": "Atom8 Studio",
+  "description": "AI consultancy firm that helps Malaysian mid-sized enterprises identify and implement automation workflows that deliver measurable business value.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

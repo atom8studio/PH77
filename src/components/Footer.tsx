@@ -8,7 +8,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
                 <span className="text-neutral-950 font-display font-bold text-xl leading-none">N</span>
               </div>
-              <span className="font-display font-semibold text-lg text-white tracking-tight">Nexa Consult</span>
+              <span className="font-display font-semibold text-lg text-white tracking-tight">Atom8 Studio</span>
             </div>
             <p className="max-w-xs text-sm font-light leading-relaxed mb-6">
               An AI Transformation & Automation Consultancy helping Malaysian mid-sized enterprises navigate implementation and governance.
@@ -37,7 +37,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-medium mb-6 font-display mt-2 md:mt-0">Contact</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><a href="mailto:hello@nexaconsult.com.my" className="hover:text-white transition-colors">hello@nexaconsult.com.my</a></li>
+              <li><a href="mailto:atom8studio@irisvc.co" className="hover:text-white transition-colors">atom8studio@irisvc.co</a></li>
               <li><span className="text-neutral-500">Kuala Lumpur, Malaysia</span></li>
               <li className="mt-6">
                 <a href="#contact" className="inline-block border-b border-neutral-600 pb-1 hover:text-white hover:border-white transition-colors">
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-light">
-          <div>&copy; {new Date().getFullYear()} Nexa AI Consultancy. All rights reserved.</div>
+          <div>&copy; {new Date().getFullYear()} Atom8 Studio. All rights reserved.</div>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

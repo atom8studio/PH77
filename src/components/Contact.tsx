@@ -47,8 +47,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-neutral-950">Direct Inquiries</h4>
-                  <a href="mailto:hello@nexaconsult.com.my" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">
-                    hello@nexaconsult.com.my
+                  <a href="mailto:atom8studio@irisvc.co" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">
+                    atom8studio@irisvc.co
                   </a>
                 </div>
               </div>
@@ -109,7 +109,7 @@ export default function Contact() {
                         id="company"
                         value={formState.company}
                         onChange={(e) => setFormState({ ...formState, company: e.target.value })}
-                        placeholder="Nexa Group Sdn Bhd"
+                        placeholder="Atom8 Studio"
                         className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-neutral-50/50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-950/20 focus:border-neutral-950 transition-all text-sm font-light text-neutral-900 placeholder:text-neutral-400"
                       />
                     </div>

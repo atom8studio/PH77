@@ -6,7 +6,7 @@ export default function Header() {
           <div className="w-8 h-8 rounded-lg bg-neutral-950 flex items-center justify-center">
             <span className="text-white font-display font-bold text-xl leading-none">N</span>
           </div>
-          <span className="font-display font-semibold text-lg tracking-tight">Nexa Consult</span>
+          <span className="font-display font-semibold text-lg tracking-tight">Atom8 Studio</span>
         </div>
         
         <nav className="hidden md:flex items-center gap-8">

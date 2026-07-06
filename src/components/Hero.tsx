@@ -45,7 +45,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              We help organisations identify high-impact AI opportunities, implement practical solutions, and realise measurable business outcomes. No hype, just results.
+              We help Malaysian and Southeast Asian service businesses identify high-impact AI opportunities, implement practical solutions, and realise measurable business outcomes. No hype, just results.
             </motion.p>
             
             <motion.div 

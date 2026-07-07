@@ -1,24 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    company: '',
-    industry: '',
-    message: ''
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  // const [formState, setFormState] = useState({
+  //   name: '',
+  //   email: '',
+  //   company: '',
+  //   industry: '',
+  //   message: ''
+  // });
+  // const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formState.name || !formState.email) return;
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   if (!formState.name || !formState.email) return;
     
-    // Simulate real submission
-    setIsSubmitted(true);
-  };
+  //   // Simulate real submission
+  //   setIsSubmitted(true);
+  // };
+  useEffect(() => {
+    const scriptSrc = "https://tally.so/widgets/embed.js";
+
+    const loadTally = () => {
+      if (typeof window.Tally !== "undefined") {
+        window.Tally.loadEmbeds();
+      }
+    };
+
+    if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
+      const script = document.createElement("script");
+      script.src = scriptSrc;
+      script.onload = loadTally;
+      document.body.appendChild(script);
+    } else {
+      loadTally();
+    }
+  }, []);
+
 
   return (
     <section id="contact" className="py-24 bg-neutral-50 scroll-mt-20 relative overflow-hidden">
@@ -60,7 +79,7 @@ export default function Contact() {
           <div className="lg:col-span-7 w-full">
             <div className="bg-white rounded-3xl border border-neutral-200 shadow-sm p-6 sm:p-10 relative">
               <AnimatePresence mode="wait">
-                {!isSubmitted ? (
+                {/* {!isSubmitted ? (
                   <motion.form 
                     key="contact-form"
                     onSubmit={handleSubmit}
@@ -175,7 +194,17 @@ export default function Contact() {
                       Send Another Message
                     </button>
                   </motion.div>
-                )}
+                )} */}
+                <iframe
+                  data-tally-src="https://tally.so/embed/Gxy1No?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                  loading="lazy"
+                  width="100%"
+                  height="500"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+                  title="Atom8 Contact Us"
+                />
               </AnimatePresence>
             </div>
           </div>

@@ -1,0 +1,99 @@
+services:
+  # ==========================================
+  # HERMES AGENT 1
+  # ==========================================
+  hermes-agent-1:
+    image: ghcr.io/hostinger/hvps-hermes-agent:latest
+    container_name: hermes_agent_1
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/opt/data
+    deploy:
+      resources:
+        limits:
+          cpus: 2
+          memory: 4G
+        reservations:
+          cpus: 0.5
+          memory: 2G
+    labels:
+      - "traefik.enable=false"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.localhost`)"
+    tty: true
+    stdin_open: true
+
+  # ==========================================
+  # HERMES AGENT 2
+  # ==========================================
+  hermes-agent-2:
+    image: ghcr.io/hostinger/hvps-hermes-agent:latest
+    container_name: hermes_agent_2
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data_2:/opt/data
+    deploy:
+      resources:
+        limits:
+          cpus: 2
+          memory: 4G
+        reservations:
+          cpus: 0.5
+          memory: 2G
+    labels:
+      - "traefik.enable=false"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.localhost`)"
+
+  # ==========================================
+  # HERMES AGENT 3
+  # ==========================================
+  hermes-agent-3:
+    image: ghcr.io/hostinger/hvps-hermes-agent:latest
+    container_name: hermes_agent_3
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data_3:/opt/data
+    deploy:
+      resources:
+        limits:
+          cpus: 2
+          memory: 4G
+        reservations:
+          cpus: 0.5
+          memory: 2G
+    labels:
+      - "traefik.enable=false"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.localhost`)"
+
+  # ==========================================
+  # HERMES AGENT 4
+  # ==========================================
+  hermes-agent-4:
+      image: ghcr.io/hostinger/hvps-hermes-agent:latest
+      container_name: hermes_agent_4
+      restart: unless-stopped
+      env_file:
+        - .env
+      volumes:
+        - ./data_4:/opt/data
+        # Maps your host's projects folder into the container
+        - /home/Projects:/opt/workspace
+        - ~/.config/gh:/opt/.config/gh
+        # This mounts the host's gh tool inside Docker
+        - /usr/bin/gh:/usr/bin/gh
+      deploy:
+        resources:
+          limits:
+            cpus: 2
+            memory: 4G
+          reservations:
+            cpus: 0.5
+            memory: 2G
+      labels:
+        - "traefik.enable=false"
+        - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.localhost`)"

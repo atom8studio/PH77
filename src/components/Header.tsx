@@ -9,7 +9,7 @@ export default function Header() {
           <span className="font-display font-semibold text-lg tracking-tight">Atom8 Studio</span>
         </div>
         
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           <a href="#services" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Services</a>
           <a href="#approach" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Approach</a>
           <a href="#case-studies" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Case Studies</a>

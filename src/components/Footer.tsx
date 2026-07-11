@@ -5,23 +5,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
-                <span className="text-neutral-950 font-display font-bold text-xl leading-none">N</span>
-              </div>
               <span className="font-display font-semibold text-lg text-white tracking-tight">Atom8 Studio</span>
             </div>
             <p className="max-w-xs text-sm font-light leading-relaxed mb-6">
               We make AI boring. AI should be invisible, seamless and the way we work. 
             </p>
-            <div className="flex gap-4">
-               {/* Placeholders for social icons */}
-               <div className="w-10 h-10 rounded-full border border-neutral-800 flex items-center justify-center hover:border-neutral-600 transition-colors cursor-pointer">
-                 <span className="text-sm font-medium">IN</span>
-               </div>
-               <div className="w-10 h-10 rounded-full border border-neutral-800 flex items-center justify-center hover:border-neutral-600 transition-colors cursor-pointer">
-                 <span className="text-sm font-medium">X</span>
-               </div>
-            </div>
           </div>
           
           <div>

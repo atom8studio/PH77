@@ -1,12 +1,18 @@
+import myLogo from '../assets/images/logo_horizontal.png';
+
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 border-b border-neutral-100 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-neutral-950 flex items-center justify-center">
-            <span className="text-white font-display font-bold text-xl leading-none">N</span>
+          <div className="w-25 rounded-lg flex items-center justify-center">
+            <img 
+                src={myLogo}
+                alt="Iris Group Logo" 
+                className="object-contain rounded-sm"
+                referrerPolicy="no-referrer"
+              />
           </div>
-          <span className="font-display font-semibold text-lg tracking-tight">Atom8 Studio</span>
         </div>
         
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">

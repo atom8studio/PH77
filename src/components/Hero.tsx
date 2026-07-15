@@ -25,7 +25,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
             >
               <span className="inline-flex items-center rounded-full px-4 py-1.5 text-xs font-semibold text-neutral-800 bg-neutral-200/60 border border-neutral-300/30 mb-8 font-display tracking-wide uppercase">
-                Strategic Advisory • Technical Implementation 
+                Strategy • Automation • Implementation 
               </span>
             </motion.div>
             
@@ -35,7 +35,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              AI Potential <br/>
+              From AI Potential <br/>
               <span className="text-gradient">to Business Impact</span>
             </motion.h1>
             
@@ -45,7 +45,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              We help Malaysian and Southeast Asian service businesses identify high-impact AI opportunities, implement practical solutions, and realise measurable business outcomes. No hype, just results.
+              We combine strategic advisory with practical implementation to help Malaysian and ASEAN enterprises identify high-impact AI opportunities and turn them into measurable business outcomes. No hype, just results.
             </motion.p>
             
             <motion.div 

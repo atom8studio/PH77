@@ -10,12 +10,14 @@ import Approach from './components/Approach';
 import CaseStudies from './components/CaseStudies';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import PageLogoBackdrop from './components/PageLogoBackdrop';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-neutral-50 flex flex-col">
+    <div className="relative isolate min-h-screen bg-neutral-50 flex flex-col">
       <Header />
-      <main className="flex-grow pt-20">
+      <PageLogoBackdrop />
+      <main className="relative z-10 flex-grow pt-20">
         <Hero />
         <Expertise />
         <Services />
@@ -27,4 +29,3 @@ export default function App() {
     </div>
   );
 }
-

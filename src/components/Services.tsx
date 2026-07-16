@@ -21,8 +21,8 @@ const services = [
     icon: Workflow,
   },
   {
-    title: "Knowledge Assistants",
-    description: "Build internal knowledge bases to help employees access SOPs, policies and operational knowledge",
+    title: "Agentic Automation",
+    description: "Deploying custom AI agents that execute multi-step business tasks",
     icon: MessageSquareText,
   },
   {

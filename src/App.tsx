@@ -11,8 +11,13 @@ import CaseStudies from './components/CaseStudies';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PageLogoBackdrop from './components/PageLogoBackdrop';
+import TaskmatePage from './TaskmatePage';
 
 export default function App() {
+  if (window.location.pathname.replace(/\/$/, '') === '/taskmate') {
+    return <TaskmatePage />;
+  }
+
   return (
     <div className="relative isolate min-h-screen bg-neutral-50 flex flex-col">
       <Header />

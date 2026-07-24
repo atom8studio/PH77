@@ -3,22 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
 
 export default function Contact() {
-  // const [formState, setFormState] = useState({
-  //   name: '',
-  //   email: '',
-  //   company: '',
-  //   industry: '',
-  //   message: ''
-  // });
-  // const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   if (!formState.name || !formState.email) return;
-    
-  //   // Simulate real submission
-  //   setIsSubmitted(true);
-  // };
   useEffect(() => {
     const scriptSrc = "https://tally.so/widgets/embed.js";
 

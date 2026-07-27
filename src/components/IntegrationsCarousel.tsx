@@ -1,14 +1,15 @@
 import { motion } from 'motion/react';
-import { Calendar, Mail, FileText, CheckSquare, Send, MessageCircle } from 'lucide-react';
+import { Calendar, Mail, FileText, CheckSquare, Send, MessageCircle, FileSpreadsheet } from 'lucide-react';
 
 const integrations = [
   { name: 'Calendar', icon: Calendar, color: 'text-red-500' },
   { name: 'Whatsapp', icon: MessageCircle, color: 'text-green-500' },
-  { name: 'ToDos', icon: FileText, color: 'text-yellow-500' },
   { name: 'Reminders', icon: CheckSquare, color: 'text-blue-500' },
+  { name: 'To Dos', icon: FileText, color: 'text-yellow-500' },
   { name: 'Mail', icon: Mail, color: 'text-sky-500' },
+  { name: 'Spreadsheet', icon: FileSpreadsheet, color: 'text-green-500' },
   { name: 'Telegram', icon: Send, color: 'text-sky-500' },
-  
+  { name: 'Docs', icon: FileText, color: 'text-purple-500' }
 ];
 
 export default function IntegrationsCarousel() {

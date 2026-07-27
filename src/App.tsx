@@ -8,14 +8,15 @@ import Services from './components/Services';
 import Expertise from './components/Expertise';
 import Approach from './components/Approach';
 import CaseStudies from './components/CaseStudies';
+import PersonalAdminCallout from './components/PersonalAdminCallout';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PageLogoBackdrop from './components/PageLogoBackdrop';
-import TaskmatePage from './TaskmatePage';
+import PersonalAdminPage from './PersonalAdminPage';
 
 export default function App() {
-  if (window.location.pathname.replace(/\/$/, '') === '/taskmate') {
-    return <TaskmatePage />;
+  if (window.location.pathname.replace(/\/$/, '') === '/personal-assistant') {
+    return <PersonalAdminPage />;
   }
 
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Services />
         <Approach />
         <CaseStudies />
+        <PersonalAdminCallout />
         <Contact />
       </main>
       <Footer />

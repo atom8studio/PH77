@@ -2,5 +2,5 @@
   "name": "Atom8 Studio",
   "description": "AI consultancy firm that helps Malaysian mid-sized enterprises identify and implement automation workflows that deliver measurable business value.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }

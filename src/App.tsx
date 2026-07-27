@@ -8,11 +8,17 @@ import Services from './components/Services';
 import Expertise from './components/Expertise';
 import Approach from './components/Approach';
 import CaseStudies from './components/CaseStudies';
+import PersonalAdminCallout from './components/PersonalAdminCallout';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PageLogoBackdrop from './components/PageLogoBackdrop';
+import PersonalAdminPage from './PersonalAdminPage';
 
 export default function App() {
+  if (window.location.pathname.replace(/\/$/, '') === '/personal-assistant') {
+    return <PersonalAdminPage />;
+  }
+
   return (
     <div className="relative isolate min-h-screen bg-neutral-50 flex flex-col">
       <Header />
@@ -23,6 +29,7 @@ export default function App() {
         <Services />
         <Approach />
         <CaseStudies />
+        <PersonalAdminCallout />
         <Contact />
       </main>
       <Footer />

@@ -36,8 +36,8 @@ const capabilities = [
 ];
 
 const steps = [
-  ['01', 'Send a message', 'Tell Dobbie what you need in the same natural way you would message a friend or an admin.'],
-  ['02', 'Delegate it', 'Dobbie asks what matters, gets your permissions and keeps the next step simple.'],
+  ['01', 'Send a message', 'Tell Dobbie what you need via Whatsapp or Telegram, just like you would to a colleague.'],
+  ['02', 'Delegate it', 'Dobbie asks what matters, gets your permissions and handles the rest in the background.'],
   ['03', 'Focus on what matters', 'Your plans, reminders, and everyday admin become easier to manage from one familiar conversation.'],
 ];
 
@@ -93,7 +93,7 @@ export default function TaskmatePage() {
                   className="inline-flex items-center rounded-full px-4 py-1.5 text-xs font-semibold text-neutral-800 bg-neutral-200/60 border border-neutral-300/30 mb-8 font-display tracking-wide uppercase"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }}
                 >
-                  A chat companion for everyday admin
+                  AI Admin Assistant
                 </motion.span>
                 <motion.h1
                   className="text-5xl sm:text-6xl lg:text-8xl font-display font-medium tracking-tight text-neutral-950 mb-6 leading-[1.02]"
@@ -105,7 +105,7 @@ export default function TaskmatePage() {
                   className="text-lg text-neutral-600 mb-8 leading-relaxed font-light max-w-xl"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
                 >
-                  Dobbie is a friendly chat companion that helps small admin tasks that take up too much headspace — streamlining your workflow in a conversation.
+                  Your daily command center for email, tasks, reminders, and planning — all in one chatroom. Dobbie helps your business stay on top of your daily tasks, so you can focus on what matters most.
                 </motion.p>
                 <motion.div className="flex flex-col sm:flex-row gap-4" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
                   <a href="#capabilities" className="inline-flex justify-center items-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors">
@@ -123,8 +123,8 @@ export default function TaskmatePage() {
                   </div>
                   <div className="space-y-4 text-sm">
                     <div className="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">What can I help you organise today?</div>
-                    <div className="max-w-[85%] ml-auto rounded-2xl rounded-tr-sm bg-neutral-950 px-4 py-3 text-white">I spent a little more than planned this week. Can you help me check my budget?</div>
-                    <div className="max-w-[90%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">Of course. You’re RM120 over your weekly dining budget. Want to adjust this week’s plan together?</div>
+                    <div className="max-w-[85%] ml-auto rounded-2xl rounded-tr-sm bg-neutral-950 px-4 py-3 text-white">The quarterly report is due tomorrow, can you remind everyone to submit their sections?</div>
+                    <div className="max-w-[90%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">Of course. I've reminded Bob, Kevin and John to submit their parts. I've also updated the report with the latest expenses.</div>
                   </div>
                   <div className="mt-6 flex items-center gap-2 rounded-xl border border-neutral-200 px-4 py-3 text-xs text-neutral-400"><MessageCircle className="w-4 h-4" /> Message Dobbie...</div>
                 </div>
@@ -135,7 +135,10 @@ export default function TaskmatePage() {
 
         <section id="capabilities" className="py-24 bg-white scroll-mt-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="mb-16"><h2 className="text-3xl font-display font-medium text-neutral-950 mb-4">The helpful assistant between you and your to-do list</h2><p className="text-neutral-600 font-light text-lg">Dobbie turns everyday admin into a conversation. No complicated menus — just tell it what you need, and offload one task at a time. Dobbie learns from previous interactions and adapts to your workflow.</p></div>
+            <div className="mb-16">
+              <h2 className="text-3xl font-display font-medium text-neutral-950 mb-4">The helpful assistant between you and your admin work</h2>
+              <p className="text-neutral-600 font-light text-lg">Dobbie is an AI admin assistant that helps Malaysian business owners manage WhatsApp, email, appointments, follow-ups, track expenses, FAQs, and daily tasks. Dobbie speaks English and Mandarin.</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {capabilities.map(({ icon: Icon, title, description, video }, index) => (
                 <motion.div key={title} className="group" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.5, delay: index * 0.1 }}>
@@ -162,8 +165,8 @@ export default function TaskmatePage() {
         <section id="contact" className="py-24 bg-neutral-50 scroll-mt-20">
           <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
             <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold text-neutral-800 bg-neutral-200/50 border border-neutral-300/30 mb-6 font-display uppercase tracking-wider">Coming soon</span>
-            <h2 className="text-4xl sm:text-5xl font-display font-medium text-neutral-950 mb-6 tracking-tight">Make room for what matters.</h2>
-            <p className="text-neutral-600 font-light text-lg leading-relaxed mb-10">Tell us a little about how you would like Dobbie to help. We’re shaping the first version around real everyday needs.</p>
+            <h2 className="text-4xl sm:text-5xl font-display font-medium text-neutral-950 mb-6 tracking-tight">Your AI admin assistant, ready for business</h2>
+            <p className="text-neutral-600 font-light text-lg leading-relaxed mb-10">Tell us about how you would like Dobbie to help. We’re shaping the first version around real everyday needs.</p>
           </div>
           <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
             <iframe

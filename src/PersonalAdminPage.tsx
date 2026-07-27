@@ -99,7 +99,7 @@ export default function TaskmatePage() {
                   className="text-5xl sm:text-6xl lg:text-8xl font-display font-medium tracking-tight text-neutral-950 mb-6 leading-[1.02]"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
                 >
-                  Your Personal<br /><span className="text-gradient">Back Office</span>
+                  Your Digital<br /><span className="text-gradient">Back Office</span>
                 </motion.h1>
                 <motion.p
                   className="text-lg text-neutral-600 mb-8 leading-relaxed font-light max-w-xl"

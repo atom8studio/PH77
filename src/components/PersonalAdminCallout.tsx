@@ -14,7 +14,7 @@ export default function PersonalAdminCallout() {
         >
           <div className="max-w-2xl">
             <h2 className="text-3xl sm:text-4xl font-display font-medium tracking-tight">
-              Taking the &quot;ugh&quot; out of admin.
+              Taking the &quot;ugh&quot; out of admin
             </h2>
           </div>
           <a

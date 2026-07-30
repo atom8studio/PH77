@@ -12,7 +12,7 @@ import PersonalAdminCallout from './components/PersonalAdminCallout';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PageLogoBackdrop from './components/PageLogoBackdrop';
-import PersonalAdminPage from './PersonalAdminPage';
+import PersonalAdminPage from './pages/PersonalAdminPage';
 
 export default function App() {
   if (window.location.pathname.replace(/\/$/, '') === '/personal-assistant') {

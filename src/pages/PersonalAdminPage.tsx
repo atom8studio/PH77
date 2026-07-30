@@ -8,42 +8,42 @@ import {
   MessageCircle,
   Sparkles,
 } from 'lucide-react';
-import logo from './assets/images/logo_horizontal.png';
-import budgetVideo from './assets/videos/Budget.mp4';
-import calendarVideo from './assets/videos/Calendar.mp4';
-import compareVideo from './assets/videos/Compare.mp4';
-import IntegrationsCarousel from './components/IntegrationsCarousel';
+import logo from '../assets/images/logo_horizontal.png';
+import budgetVideo from '../assets/videos/Budget.mp4';
+import calendarVideo from '../assets/videos/Calendar.mp4';
+import compareVideo from '../assets/videos/Compare.mp4';
+import IntegrationsCarousel from '../components/IntegrationsCarousel';
 
 const capabilities = [
   {
     icon: CircleDollarSign,
-    title: 'Budgeting made easier',
-    description: 'Set simple budget, quickly update your expenses, analyse your spending and get a clear view of where your money is going.',
+    title: 'Keep expenses up to date',
+    description: 'Send receipts and expense updates by text, keep your records organised, and get a clearer view of where your business money is going.',
     video: budgetVideo,
   },
   {
     icon: CalendarDays,
-    title: 'Never double book again',
-    description: 'Add events, keep important commitments close at hand and analyse what you are spending your time on.',
+    title: 'Schedule without the back-and-forth',
+    description: 'Let Dobbie book appointments, check availability, send reminders, and keep your team and customers on the same page.',
     video: calendarVideo,
   },
   {
     icon: Scale,
-    title: 'Compare and prioritise',
-    description: 'Turn information overload into useful insights so the little things do not get lost in the day.',
+    title: 'Answer customers faster',
+    description: 'Give customers quick answers to common questions and make sure important enquiries and follow-ups do not get lost.',
     video: compareVideo,
   },
 ];
 
 const steps = [
-  ['01', 'Send a message', 'Tell Dobbie what you need via Whatsapp or Telegram, just like you would to a colleague.'],
-  ['02', 'Delegate it', 'Dobbie asks what matters, gets your permissions and handles the rest in the background.'],
-  ['03', 'Focus on what matters', 'Your plans, reminders, and everyday admin become easier to manage from one familiar conversation.'],
+  ['01', 'Text what you need', 'Message Dobbie through WhatsApp or Telegram, just like you would message a colleague.'],
+  ['02', 'Let Dobbie handle it', 'Dobbie asks the right questions, checks details, and takes care of the admin in the background.'],
+  ['03', 'Get back to running your business', 'Appointments, expenses, customer questions, and follow-ups stay organised in one familiar conversation.'],
 ];
 
 export default function TaskmatePage() {
   useEffect(() => {
-    document.title = 'Dobbie — Your everyday admin assistant | Atom8 Studio';
+    document.title = 'Dobbie — Your small business assistant | Atom8 Studio';
     return () => {
       document.title = 'Atom8 Studio - AI Consultancy for ASEAN Enterprises';
     };
@@ -76,7 +76,7 @@ export default function TaskmatePage() {
             <img src={logo} alt="Atom8 Studio" className="object-contain rounded-sm" />
           </a>
           <nav className="hidden md:flex items-center gap-8" aria-label="Taskmate navigation">
-            <a href="#capabilities" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">What it can do</a>
+            <a href="#capabilities" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">For your business</a>
             <a href="#how-it-works" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">How it works</a>
           </nav>
           <a href="#contact" className="text-sm font-medium text-white bg-neutral-950 px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">Join the waitlist</a>
@@ -93,23 +93,23 @@ export default function TaskmatePage() {
                   className="inline-flex items-center rounded-full px-4 py-1.5 text-xs font-semibold text-neutral-800 bg-neutral-200/60 border border-neutral-300/30 mb-8 font-display tracking-wide uppercase"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }}
                 >
-                  AI Admin Assistant
+                  Your small business assistant
                 </motion.span>
                 <motion.h1
                   className="text-5xl sm:text-6xl lg:text-8xl font-display font-medium tracking-tight text-neutral-950 mb-6 leading-[1.02]"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
                 >
-                  Your Digital<br /><span className="text-gradient">Back Office</span>
+                  Run your business.<br /><span className="text-gradient">We’ll handle the admin.</span>
                 </motion.h1>
                 <motion.p
                   className="text-lg text-neutral-600 mb-8 leading-relaxed font-light max-w-xl"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
                 >
-                  Your daily command center for email, tasks, reminders, and planning — all in one chatroom. Dobbie helps your business stay on top of your daily tasks, so you can focus on what matters most.
+                  A virtual assistant for small companies that works through text message. Schedule appointments, update expenses, answer customer questions, and keep daily tasks moving — without adding more software or staff.
                 </motion.p>
                 <motion.div className="flex flex-col sm:flex-row gap-4" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
                   <a href="#capabilities" className="inline-flex justify-center items-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors">
-                    Meet Dobbie <ArrowRight className="w-4 h-4" />
+                    See how Dobbie helps <ArrowRight className="w-4 h-4" />
                   </a>
                 </motion.div>
               </div>
@@ -122,9 +122,9 @@ export default function TaskmatePage() {
                     <span className="ml-auto w-2 h-2 rounded-full bg-emerald-500" />
                   </div>
                   <div className="space-y-4 text-sm">
-                    <div className="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">What can I help you organise today?</div>
-                    <div className="max-w-[85%] ml-auto rounded-2xl rounded-tr-sm bg-neutral-950 px-4 py-3 text-white">The quarterly report is due tomorrow, can you remind everyone to submit their sections?</div>
-                    <div className="max-w-[90%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">Of course. I've reminded Bob, Kevin and John to submit their parts. I've also updated the report with the latest expenses.</div>
+                    <div className="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">Hi! What can I take care of today?</div>
+                    <div className="max-w-[85%] ml-auto rounded-2xl rounded-tr-sm bg-neutral-950 px-4 py-3 text-white">Book a customer for Tuesday at 2pm and add the RM180 supplier receipt to expenses.</div>
+                    <div className="max-w-[90%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">Done — the appointment is booked and the receipt has been added. I’ll remind you before the customer arrives.</div>
                   </div>
                   <div className="mt-6 flex items-center gap-2 rounded-xl border border-neutral-200 px-4 py-3 text-xs text-neutral-400"><MessageCircle className="w-4 h-4" /> Message Dobbie...</div>
                 </div>
@@ -136,8 +136,8 @@ export default function TaskmatePage() {
         <section id="capabilities" className="py-24 bg-white scroll-mt-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="mb-16">
-              <h2 className="text-3xl font-display font-medium text-neutral-950 mb-4">The helpful assistant between you and your admin work</h2>
-              <p className="text-neutral-600 font-light text-lg">Dobbie is an AI admin assistant that helps Malaysian business owners manage WhatsApp, email, appointments, follow-ups, track expenses, FAQs, and daily tasks. Dobbie speaks English and Mandarin.</p>
+              <h2 className="text-3xl font-display font-medium text-neutral-950 mb-4">The extra pair of hands your company needs</h2>
+              <p className="text-neutral-600 font-light text-lg">Dobbie helps small-company owners and teams stay responsive and organised through simple text messages. No new dashboard to learn — just delegate work in WhatsApp or Telegram. Dobbie speaks English and Mandarin.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {capabilities.map(({ icon: Icon, title, description, video }, index) => (
@@ -165,8 +165,8 @@ export default function TaskmatePage() {
         <section id="contact" className="py-24 bg-neutral-50 scroll-mt-20">
           <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
             <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold text-neutral-800 bg-neutral-200/50 border border-neutral-300/30 mb-6 font-display uppercase tracking-wider">Coming soon</span>
-            <h2 className="text-4xl sm:text-5xl font-display font-medium text-neutral-950 mb-6 tracking-tight">Your AI admin assistant, ready for business</h2>
-            <p className="text-neutral-600 font-light text-lg leading-relaxed mb-10">Tell us about how you would like Dobbie to help. We’re shaping the first version around real everyday needs.</p>
+            <h2 className="text-4xl sm:text-5xl font-display font-medium text-neutral-950 mb-6 tracking-tight">Make more time for the work that grows your business</h2>
+            <p className="text-neutral-600 font-light text-lg leading-relaxed mb-10">Join the waitlist and tell us which business tasks you would like Dobbie to handle by text message.</p>
           </div>
           <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
             <iframe

@@ -12,11 +12,16 @@ import PersonalAdminCallout from './components/PersonalAdminCallout';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PageLogoBackdrop from './components/PageLogoBackdrop';
-import PersonalAdminPage from './pages/PersonalAdminPage';
+import AIAdminPage from './pages/AIAdminPage';
+import VirtualAssistantPage from './pages/VirtualAssistantPage';
 
 export default function App() {
+  if (window.location.pathname.replace(/\/$/, '') === '/ai-admin') {
+    return <AIAdminPage />;
+  }
+
   if (window.location.pathname.replace(/\/$/, '') === '/personal-assistant') {
-    return <PersonalAdminPage />;
+    return <VirtualAssistantPage />;
   }
 
   return (

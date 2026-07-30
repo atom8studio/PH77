@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import {
   ArrowRight,
@@ -7,43 +7,50 @@ import {
   CircleDollarSign,
   MessageCircle,
   Sparkles,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react';
-import logo from './assets/images/logo_horizontal.png';
-import budgetVideo from './assets/videos/Budget.mp4';
-import calendarVideo from './assets/videos/Calendar.mp4';
-import compareVideo from './assets/videos/Compare.mp4';
-import IntegrationsCarousel from './components/IntegrationsCarousel';
+import logo from '../assets/images/logo_horizontal.png';
+import budgetVideo from '../assets/videos/Budget.mp4';
+import calendarVideo from '../assets/videos/Calendar.mp4';
+import compareVideo from '../assets/videos/Compare.mp4';
+import IntegrationsCarousel from '../components/IntegrationsCarousel';
 
 const capabilities = [
   {
     icon: CircleDollarSign,
-    title: 'Budgeting made easier',
-    description: 'Set simple budget, quickly update your expenses, analyse your spending and get a clear view of where your money is going.',
-    video: budgetVideo,
+    title: 'Keep expenses up to date',
+    description: 'Send receipts and expense updates by text, keep your records organised, and get a clearer view of where your business money is going.',
   },
   {
     icon: CalendarDays,
-    title: 'Never double book again',
-    description: 'Add events, keep important commitments close at hand and analyse what you are spending your time on.',
-    video: calendarVideo,
+    title: 'Schedule without the back-and-forth',
+    description: 'Let Robin book appointments, check availability, send reminders, and keep your team and customers on the same page.',
   },
   {
     icon: Scale,
-    title: 'Compare and prioritise',
-    description: 'Turn information overload into useful insights so the little things do not get lost in the day.',
-    video: compareVideo,
+    title: 'Answer customers faster',
+    description: 'Give customers quick answers to common questions and make sure important enquiries and follow-ups do not get lost.',
   },
 ];
 
+const videoDemos = [
+  { title: 'Update expenses in seconds', description: 'Send a receipt or expense update by message and keep your business records current.', video: budgetVideo },
+  { title: 'Book appointments by text', description: 'Ask Robin to find a time, book the appointment, and remind everyone involved.', video: calendarVideo },
+  // { title: 'Keep customer requests moving', description: 'Turn everyday questions and follow-ups into clear actions without losing the thread.', video: compareVideo },
+];
+
 const steps = [
-  ['01', 'Send a message', 'Tell Dobbie what you need via Whatsapp or Telegram, just like you would to a colleague.'],
-  ['02', 'Delegate it', 'Dobbie asks what matters, gets your permissions and handles the rest in the background.'],
-  ['03', 'Focus on what matters', 'Your plans, reminders, and everyday admin become easier to manage from one familiar conversation.'],
+  ['01', 'Text what you need', 'Message Robin through WhatsApp or Telegram, just like you would message a colleague.'],
+  ['02', 'Let Robin handle it', 'Robin asks the right questions, checks details, and takes care of the admin in the background.'],
+  ['03', 'Get back to running your business', 'Appointments, expenses, customer questions, and follow-ups stay organised in one familiar conversation.'],
 ];
 
 export default function TaskmatePage() {
+  const [activeVideo, setActiveVideo] = useState(0);
+
   useEffect(() => {
-    document.title = 'Dobbie — Your everyday admin assistant | Atom8 Studio';
+    document.title = 'Your personal assistant | Atom8 Studio';
     return () => {
       document.title = 'Atom8 Studio - AI Consultancy for ASEAN Enterprises';
     };
@@ -76,10 +83,10 @@ export default function TaskmatePage() {
             <img src={logo} alt="Atom8 Studio" className="object-contain rounded-sm" />
           </a>
           <nav className="hidden md:flex items-center gap-8" aria-label="Taskmate navigation">
-            <a href="#capabilities" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">What it can do</a>
+            <a href="#capabilities" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">For your business</a>
             <a href="#how-it-works" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">How it works</a>
           </nav>
-          <a href="#contact" className="text-sm font-medium text-white bg-neutral-950 px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">Join the waitlist</a>
+          <a href="#contact" className="text-sm font-medium text-white bg-neutral-950 px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">Get in touch</a>
         </div>
       </header>
 
@@ -93,23 +100,29 @@ export default function TaskmatePage() {
                   className="inline-flex items-center rounded-full px-4 py-1.5 text-xs font-semibold text-neutral-800 bg-neutral-200/60 border border-neutral-300/30 mb-8 font-display tracking-wide uppercase"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }}
                 >
-                  AI Admin Assistant
+                  Your back office in your pocket
                 </motion.span>
                 <motion.h1
                   className="text-5xl sm:text-6xl lg:text-8xl font-display font-medium tracking-tight text-neutral-950 mb-6 leading-[1.02]"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
                 >
-                  Your Digital<br /><span className="text-gradient">Back Office</span>
+                  Admin,<br /><span className="text-gradient">handled.</span>
                 </motion.h1>
                 <motion.p
                   className="text-lg text-neutral-600 mb-8 leading-relaxed font-light max-w-xl"
                   initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
                 >
-                  Your daily command center for email, tasks, reminders, and planning — all in one chatroom. Dobbie helps your business stay on top of your daily tasks, so you can focus on what matters most.
+                  So you can focus on running your business.
+                </motion.p>
+                <motion.p
+                  className="text-lg text-neutral-600 mb-8 leading-relaxed font-light max-w-xl"
+                  initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
+                >
+                  Robin is a virtual assistant for small businesses that works through text message. Schedule appointments, update expenses, answer customer questions, and keep daily tasks moving — without adding more software or staff.
                 </motion.p>
                 <motion.div className="flex flex-col sm:flex-row gap-4" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
                   <a href="#capabilities" className="inline-flex justify-center items-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors">
-                    Meet Dobbie <ArrowRight className="w-4 h-4" />
+                    See how Robin helps <ArrowRight className="w-4 h-4" />
                   </a>
                 </motion.div>
               </div>
@@ -118,15 +131,15 @@ export default function TaskmatePage() {
                 <div className="relative rounded-3xl bg-white border border-neutral-200/80 p-5 sm:p-7 shadow-sm max-w-md ml-auto">
                   <div className="flex items-center gap-3 pb-5 mb-5 border-b border-neutral-100">
                     <div className="w-11 h-11 rounded-2xl bg-neutral-950 flex items-center justify-center text-white"><Sparkles className="w-5 h-5" /></div>
-                    <div><p className="font-display font-medium">Dobbie</p><p className="text-xs text-neutral-500">Always ready to help</p></div>
+                    <div><p className="font-display font-medium">Robin</p><p className="text-xs text-neutral-500">Always ready to help</p></div>
                     <span className="ml-auto w-2 h-2 rounded-full bg-emerald-500" />
                   </div>
                   <div className="space-y-4 text-sm">
-                    <div className="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">What can I help you organise today?</div>
-                    <div className="max-w-[85%] ml-auto rounded-2xl rounded-tr-sm bg-neutral-950 px-4 py-3 text-white">The quarterly report is due tomorrow, can you remind everyone to submit their sections?</div>
-                    <div className="max-w-[90%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">Of course. I've reminded Bob, Kevin and John to submit their parts. I've also updated the report with the latest expenses.</div>
+                    <div className="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">Hi! What can I take care of today?</div>
+                    <div className="max-w-[85%] ml-auto rounded-2xl rounded-tr-sm bg-neutral-950 px-4 py-3 text-white">Book a customer for Tuesday at 2pm and add the RM180 supplier receipt to expenses.</div>
+                    <div className="max-w-[90%] rounded-2xl rounded-tl-sm bg-neutral-100 px-4 py-3 text-neutral-700">Done — the appointment is booked and the receipt has been added. I’ll remind you before the customer arrives.</div>
                   </div>
-                  <div className="mt-6 flex items-center gap-2 rounded-xl border border-neutral-200 px-4 py-3 text-xs text-neutral-400"><MessageCircle className="w-4 h-4" /> Message Dobbie...</div>
+                  <div className="mt-6 flex items-center gap-2 rounded-xl border border-neutral-200 px-4 py-3 text-xs text-neutral-400"><MessageCircle className="w-4 h-4" /> Message Robin...</div>
                 </div>
               </motion.div>
             </div>
@@ -136,26 +149,48 @@ export default function TaskmatePage() {
         <section id="capabilities" className="py-24 bg-white scroll-mt-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="mb-16">
-              <h2 className="text-3xl font-display font-medium text-neutral-950 mb-4">The helpful assistant between you and your admin work</h2>
-              <p className="text-neutral-600 font-light text-lg">Dobbie is an AI admin assistant that helps Malaysian business owners manage WhatsApp, email, appointments, follow-ups, track expenses, FAQs, and daily tasks. Dobbie speaks English and Mandarin.</p>
+              <h2 className="text-3xl font-display font-medium text-neutral-950 mb-4">The extra pair of hands your company needs</h2>
+              <p className="text-neutral-600 font-light text-lg">Robin helps business owners stay responsive and organised through simple text messages. No new dashboard to learn — just delegate work in WhatsApp or Telegram. Robin speaks English and Mandarin.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              {capabilities.map(({ icon: Icon, title, description, video }, index) => (
+              {capabilities.map(({ icon: Icon, title, description }, index) => (
                 <motion.div key={title} className="group" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                   <div className="mb-5 inline-flex items-center justify-center rounded-xl bg-neutral-100 p-3 text-neutral-900 group-hover:bg-neutral-900 group-hover:text-white transition-colors"><Icon className="h-6 w-6" strokeWidth={1.5} /></div>
                   <h3 className="text-xl font-display font-medium text-neutral-950 mb-3">{title}</h3><p className="text-neutral-600 font-light leading-relaxed">{description}</p>
-                  <div className="py-6 capability-video">
-                    <video controls autoPlay muted loop playsInline className="w-full rounded-2xl border border-neutral-200 shadow-sm">
-                      <source src={video} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
                 </motion.div>
                 
               ))}
             </div>
           </div>
           <IntegrationsCarousel />
+        </section>
+
+        <section id="demos" className="scroll-mt-20 bg-neutral-50 py-24">
+          <div className="mx-auto max-w-5xl px-6 lg:px-8">
+            <div className="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+              <div>
+                <span className="mb-4 inline-flex rounded-full bg-neutral-200/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-neutral-700">See Robin in action</span>
+                <h2 className="text-3xl font-display font-medium text-neutral-950 sm:text-4xl">A little help, right when you need it</h2>
+                <p className="mt-4 max-w-xl text-lg font-light leading-relaxed text-neutral-600">From a quick expense update to a new appointment, Robin turns simple messages into useful action.</p>
+              </div>
+              <div className="flex gap-2">
+                <button type="button" onClick={() => setActiveVideo((activeVideo - 1 + videoDemos.length) % videoDemos.length)} aria-label="Previous demo" className="flex h-11 w-11 items-center justify-center rounded-full border border-neutral-300 text-neutral-700 transition hover:bg-neutral-900 hover:text-white"><ChevronLeft className="h-5 w-5" /></button>
+                <button type="button" onClick={() => setActiveVideo((activeVideo + 1) % videoDemos.length)} aria-label="Next demo" className="flex h-11 w-11 items-center justify-center rounded-full border border-neutral-300 text-neutral-700 transition hover:bg-neutral-900 hover:text-white"><ChevronRight className="h-5 w-5" /></button>
+              </div>
+            </div>
+            <div className="grid items-center gap-8 rounded-3xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-8 md:grid-cols-[1.15fr_.85fr]">
+              <video key={videoDemos[activeVideo].video} controls autoPlay muted loop playsInline className="w-full rounded-2xl border border-neutral-200 bg-neutral-100 shadow-sm">
+                <source src={videoDemos[activeVideo].video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div>
+                <p className="mb-3 text-sm font-medium text-neutral-500">0{activeVideo + 1} / 0{videoDemos.length}</p>
+                <h3 className="mb-4 text-2xl font-display font-medium text-neutral-950">{videoDemos[activeVideo].title}</h3>
+                <p className="text-lg font-light leading-relaxed text-neutral-600">{videoDemos[activeVideo].description}</p>
+                <div className="mt-8 flex gap-2">{videoDemos.map((demo, index) => <button key={demo.title} type="button" onClick={() => setActiveVideo(index)} aria-label={`View demo ${index + 1}`} className={`h-1.5 rounded-full transition-all ${index === activeVideo ? 'w-10 bg-neutral-950' : 'w-5 bg-neutral-300'}`} />)}</div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="how-it-works" className="py-24 bg-neutral-950 text-white scroll-mt-20">
@@ -165,8 +200,8 @@ export default function TaskmatePage() {
         <section id="contact" className="py-24 bg-neutral-50 scroll-mt-20">
           <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
             <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold text-neutral-800 bg-neutral-200/50 border border-neutral-300/30 mb-6 font-display uppercase tracking-wider">Coming soon</span>
-            <h2 className="text-4xl sm:text-5xl font-display font-medium text-neutral-950 mb-6 tracking-tight">Your AI admin assistant, ready for business</h2>
-            <p className="text-neutral-600 font-light text-lg leading-relaxed mb-10">Tell us about how you would like Dobbie to help. We’re shaping the first version around real everyday needs.</p>
+            <h2 className="text-4xl sm:text-5xl font-display font-medium text-neutral-950 mb-6 tracking-tight">Make more time for the work that grows your business</h2>
+            <p className="text-neutral-600 font-light text-lg leading-relaxed mb-10">Join the waitlist and tell us which business tasks you would like Robin to handle by text message.</p>
           </div>
           <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
             <iframe

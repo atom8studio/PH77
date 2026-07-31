@@ -8,7 +8,7 @@ export default function Header() {
           <div className="w-25 rounded-lg flex items-center justify-center">
             <img 
                 src={myLogo}
-                alt="Iris Group Logo" 
+                alt="Atom8 Studio Logo" 
                 className="object-contain rounded-sm"
                 referrerPolicy="no-referrer"
               />

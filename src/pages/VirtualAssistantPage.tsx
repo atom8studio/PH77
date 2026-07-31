@@ -4,8 +4,9 @@ import logo from '../assets/images/logo_horizontal.png';
 import budgetVideo from '../assets/videos/Budget.mp4';
 import calendarVideo from '../assets/videos/Calendar.mp4';
 import compareVideo from '../assets/videos/Compare.mp4';
+import SEO from '../components/SEO';
 
-const integrations = ['Gmail', 'Calendar', 'Notion', 'Telgram', 'WhatsApp', 'Google Docs', 'Google Sheets'];
+const integrations = ['Gmail', 'Calendar', 'Notion', 'Telegram', 'WhatsApp', 'Google Docs', 'Google Sheets'];
 
 const benefits = [
   { icon: Bolt, title: 'Takes action, not just notes', description: 'Book and reschedules meetings, and drafts replies on your behalf.', tone: 'coral' },
@@ -29,11 +30,6 @@ export default function BusinessAdminPage() {
   const [activeVideo, setActiveVideo] = useState(0);
 
   useEffect(() => {
-    document.title = 'Your personal assistant | Atom8 Studio';
-    return () => { document.title = 'Atom8 Studio - AI Consultancy for ASEAN Enterprises'; };
-  }, []);
-
-  useEffect(() => {
     const scriptSrc = "https://tally.so/widgets/embed.js";
 
     const loadTally = () => {
@@ -53,7 +49,9 @@ export default function BusinessAdminPage() {
   }, []);
 
   return (
-    <div className="min-h-screen overflow-hidden bg-[#FDFBF7] font-sans text-[#2C2C2A] antialiased">
+    <>
+      <SEO title="Virtual AI Assistant for Professionals | Atom8 Studio" description="Robin is a virtual AI assistant that handles scheduling, reminders, expenses, and follow-ups through simple WhatsApp and Telegram messages." canonical="https://atom8studio.com/personal-assistant" />
+      <div className="min-h-screen overflow-hidden bg-[#FDFBF7] font-sans text-[#2C2C2A] antialiased">
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-neutral-100 bg-white/80 backdrop-blur-md">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
           <a href="/" className="flex w-25 items-center rounded-lg" aria-label="Atom8 Studio home">
@@ -72,7 +70,7 @@ export default function BusinessAdminPage() {
           <div>
             <div className="inline-flex items-center rounded-full px-4 py-1.5 text-xs font-semibold text-neutral-800 bg-neutral-200/60 border border-neutral-300/30 mb-8 font-display tracking-wide uppercase">YOUR ON THE GO ASSISTANT</div>
             <h1 className="mb-5 max-w-2xl font-display text-5xl font-medium leading-[1.08] tracking-tight text-[#2C2C2A] sm:text-6xl">Free your head for what’s next</h1>
-            <p className="mb-7 max-w-xl text-lg leading-relaxed text-[#5F5E5A]">Robins handles the follow-ups, scheduling, reminders, and small decisions that quietly fill your day. Just send a message, and it gets the work moving — so you can stay focused on the bigger picture.</p>
+            <p className="mb-7 max-w-xl text-lg leading-relaxed text-[#5F5E5A]">Robin handles the follow-ups, scheduling, reminders, and small decisions that quietly fill your day. Just send a message, and it gets the work moving — so you can stay focused on the bigger picture.</p>
             <div className="flex flex-wrap gap-3">
               <a href="#demo" className="inline-flex justify-center items-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors">
                 See how Robin helps <ArrowRight className="w-4 h-4" />
@@ -125,6 +123,7 @@ export default function BusinessAdminPage() {
         </section>
 
       </main>
-    </div>
+      </div>
+    </>
   );
 }

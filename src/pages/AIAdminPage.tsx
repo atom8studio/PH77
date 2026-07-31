@@ -11,9 +11,9 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import logo from '../assets/images/logo_horizontal.png';
-import budgetVideo from '../assets/videos/Budget.mp4';
-import calendarVideo from '../assets/videos/Calendar.mp4';
-import compareVideo from '../assets/videos/Compare.mp4';
+import expensesVideo from '../assets/videos/Expenses.mp4';
+import meetingVideo from '../assets/videos/BookMeeting.mp4';
+import enquiryVideo from '../assets/videos/Enquiry.mp4';
 import IntegrationsCarousel from '../components/IntegrationsCarousel';
 
 const capabilities = [
@@ -35,9 +35,9 @@ const capabilities = [
 ];
 
 const videoDemos = [
-  { title: 'Update expenses in seconds', description: 'Send a receipt or expense update by message and keep your business records current.', video: budgetVideo },
-  { title: 'Book appointments by text', description: 'Ask Robin to find a time, book the appointment, and remind everyone involved.', video: calendarVideo },
-  // { title: 'Keep customer requests moving', description: 'Turn everyday questions and follow-ups into clear actions without losing the thread.', video: compareVideo },
+  { title: 'Book appointments by text', description: 'Ask Robin to find a time, book the appointment, and remind everyone involved.', video: meetingVideo },
+  { title: 'Keep customer requests moving', description: 'Turn everyday questions and follow-ups into clear actions without losing the thread.', video: enquiryVideo },
+  { title: 'Update expenses in seconds', description: 'Send a receipt or expense update by message and keep your business records current.', video: expensesVideo },
 ];
 
 const steps = [
@@ -50,7 +50,7 @@ export default function TaskmatePage() {
   const [activeVideo, setActiveVideo] = useState(0);
 
   useEffect(() => {
-    document.title = 'Your personal assistant | Atom8 Studio';
+    document.title = 'Your AI Admin | Atom8 Studio';
     return () => {
       document.title = 'Atom8 Studio - AI Consultancy for ASEAN Enterprises';
     };

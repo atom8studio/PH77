@@ -18,7 +18,7 @@ export default function PersonalAdminCallout() {
             </h2>
           </div>
           <a
-            href="/personal-assistant"
+            href="/virtual-assistant"
             className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 hover:bg-neutral-200 transition-colors"
           >
             Meet Robin

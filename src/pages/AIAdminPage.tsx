@@ -15,6 +15,8 @@ import expensesVideo from '../assets/videos/Expenses.mp4';
 import meetingVideo from '../assets/videos/BookMeeting.mp4';
 import enquiryVideo from '../assets/videos/Enquiry.mp4';
 import IntegrationsCarousel from '../components/IntegrationsCarousel';
+import SEO from '../components/SEO';
+import Header from '../components/Header';
 
 const capabilities = [
   {
@@ -46,15 +48,8 @@ const steps = [
   ['03', 'Get back to running your business', 'Appointments, expenses, customer questions, and follow-ups stay organised in one familiar conversation.'],
 ];
 
-export default function TaskmatePage() {
+export default function AIAdminPage() {
   const [activeVideo, setActiveVideo] = useState(0);
-
-  useEffect(() => {
-    document.title = 'Your AI Admin | Atom8 Studio';
-    return () => {
-      document.title = 'Atom8 Studio - AI Consultancy for ASEAN Enterprises';
-    };
-  }, []);
 
   useEffect(() => {
     const scriptSrc = "https://tally.so/widgets/embed.js";
@@ -76,19 +71,10 @@ export default function TaskmatePage() {
   }, []);
 
   return (
-    <div className="relative isolate min-h-screen bg-neutral-50 text-neutral-900 overflow-hidden">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 border-b border-neutral-100 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
-          <a href="/" className="w-25 rounded-lg flex items-center" aria-label="Atom8 Studio home">
-            <img src={logo} alt="Atom8 Studio" className="object-contain rounded-sm" />
-          </a>
-          <nav className="hidden md:flex items-center gap-8" aria-label="Taskmate navigation">
-            <a href="#capabilities" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">For your business</a>
-            <a href="#how-it-works" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">How it works</a>
-          </nav>
-          <a href="#contact" className="text-sm font-medium text-white bg-neutral-950 px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">Get in touch</a>
-        </div>
-      </header>
+    <>
+      <SEO title="AI Admin Assistant for Small Businesses | Atom8 Studio" description="Robin helps Malaysian small businesses manage appointments, expenses, customer enquiries, and daily admin through WhatsApp and Telegram." canonical="https://atom8studio.com/ai-admin" />
+      <div className="relative isolate min-h-screen bg-neutral-50 text-neutral-900 overflow-hidden">
+      <Header links={[{ href: '#capabilities', label: 'For your business' }, { href: '#demos', label: 'Demo' }]} ctaLabel="Get in touch" />
 
       <main className="relative z-10 pt-20">
         <section className="relative pt-24 pb-24 lg:pt-36 lg:pb-32 overflow-hidden">
@@ -194,7 +180,7 @@ export default function TaskmatePage() {
         </section>
 
         <section id="how-it-works" className="py-24 bg-neutral-950 text-white scroll-mt-20">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8"><div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"><div><h2 className="text-3xl lg:text-4xl font-display font-medium mb-6">Simple by design</h2><p className="text-neutral-400 font-light text-lg max-w-md">The best assistant is one you actually want to use. Dobbie meets you where you are, remembers the context, and keeps the interaction human.</p></div><div className="space-y-8">{steps.map(([number, title, description]) => <div key={number} className="flex gap-5 border-b border-neutral-800 pb-8"><span className="text-sm font-mono text-neutral-500 pt-1">{number}</span><div><h3 className="text-xl font-display font-medium mb-2">{title}</h3><p className="text-neutral-400 font-light leading-relaxed">{description}</p></div></div>)}</div></div></div>
+          <div className="max-w-7xl mx-auto px-6 lg:px-8"><div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"><div><h2 className="text-3xl lg:text-4xl font-display font-medium mb-6">Simple by design</h2><p className="text-neutral-400 font-light text-lg max-w-md">The best assistant is one you actually want to use. Robin meets you where you are, remembers the context, and keeps the interaction human.</p></div><div className="space-y-8">{steps.map(([number, title, description]) => <div key={number} className="flex gap-5 border-b border-neutral-800 pb-8"><span className="text-sm font-mono text-neutral-500 pt-1">{number}</span><div><h3 className="text-xl font-display font-medium mb-2">{title}</h3><p className="text-neutral-400 font-light leading-relaxed">{description}</p></div></div>)}</div></div></div>
         </section>
 
         <section id="contact" className="py-24 bg-neutral-50 scroll-mt-20">
@@ -219,6 +205,7 @@ export default function TaskmatePage() {
       </main>
 
       <footer className="bg-neutral-950 pt-12 pb-10 border-t border-neutral-900 text-neutral-400"><div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-light"><a href="/" className="text-white font-display font-semibold text-lg">Atom8 Studio</a><div>© {new Date().getFullYear()} Atom8 Studio. All rights reserved.</div><a href="mailto:atom8studio@irisvc.co" className="hover:text-white transition-colors">atom8studio@irisvc.co</a></div></footer>
-    </div>
+      </div>
+    </>
   );
 }

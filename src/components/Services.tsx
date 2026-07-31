@@ -12,7 +12,7 @@ import {
 const services = [
   {
     title: "AI Opportunity & Readiness",
-    description: "Identify high-impact AI opportunities and priotise an implementation roadmap that delivers",
+    description: "Identify high-impact AI opportunities and prioritise an implementation roadmap that delivers",
     icon: Target,
   },
   {

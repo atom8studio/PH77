@@ -13,7 +13,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PageLogoBackdrop from './components/PageLogoBackdrop';
 import AIAdminPage from './pages/AIAdminPage';
-import VirtualAssistantPage from './pages/VirtualAssistantPage';
+import VirtualAssistantLandingPage from './pages/VirtualAssistantLandingPage';
 
 export default function App() {
   if (window.location.pathname.replace(/\/$/, '') === '/ai-admin') {
@@ -21,7 +21,11 @@ export default function App() {
   }
 
   if (window.location.pathname.replace(/\/$/, '') === '/personal-assistant') {
-    return <VirtualAssistantPage />;
+    return <VirtualAssistantLandingPage />;
+  }
+
+  if (window.location.pathname.replace(/\/$/, '') === '/virtual-assistant') {
+    return <VirtualAssistantLandingPage />;
   }
 
   return (

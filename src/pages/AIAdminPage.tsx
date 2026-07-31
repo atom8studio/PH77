@@ -16,6 +16,7 @@ import meetingVideo from '../assets/videos/BookMeeting.mp4';
 import enquiryVideo from '../assets/videos/Enquiry.mp4';
 import IntegrationsCarousel from '../components/IntegrationsCarousel';
 import SEO from '../components/SEO';
+import Header from '../components/Header';
 
 const capabilities = [
   {
@@ -73,18 +74,7 @@ export default function AIAdminPage() {
     <>
       <SEO title="AI Admin Assistant for Small Businesses | Atom8 Studio" description="Robin helps Malaysian small businesses manage appointments, expenses, customer enquiries, and daily admin through WhatsApp and Telegram." canonical="https://atom8studio.com/ai-admin" />
       <div className="relative isolate min-h-screen bg-neutral-50 text-neutral-900 overflow-hidden">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 border-b border-neutral-100 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
-          <a href="/" className="w-25 rounded-lg flex items-center" aria-label="Atom8 Studio home">
-            <img src={logo} alt="Atom8 Studio" className="object-contain rounded-sm" />
-          </a>
-          <nav className="hidden md:flex items-center gap-8" aria-label="Taskmate navigation">
-            <a href="#capabilities" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">For your business</a>
-            <a href="#how-it-works" className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">How it works</a>
-          </nav>
-          <a href="#contact" className="text-sm font-medium text-white bg-neutral-950 px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">Get in touch</a>
-        </div>
-      </header>
+      <Header links={[{ href: '#capabilities', label: 'For your business' }, { href: '#demos', label: 'Demo' }]} ctaLabel="Get in touch" />
 
       <main className="relative z-10 pt-20">
         <section className="relative pt-24 pb-24 lg:pt-36 lg:pb-32 overflow-hidden">

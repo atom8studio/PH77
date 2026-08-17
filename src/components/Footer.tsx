@@ -25,7 +25,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-medium mb-6 font-display mt-2 md:mt-0">Contact</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><a href="mailto:atom8studio@irisvc.co" className="hover:text-white transition-colors">atom8studio@irisvc.co</a></li>
+              <li><a href="mailto:info@atom8studio.com" className="hover:text-white transition-colors">info@atom8studio.com</a></li>
               <li><span className="text-neutral-500">Kuala Lumpur, Malaysia</span></li>
               <li className="mt-6">
                 <a href="#contact" className="inline-block border-b border-neutral-600 pb-1 hover:text-white hover:border-white transition-colors">

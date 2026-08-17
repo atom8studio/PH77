@@ -51,8 +51,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-neutral-950">Direct Inquiries</h4>
-                  <a href="mailto:atom8studio@irisvc.co" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">
-                    atom8studio@irisvc.co
+                  <a href="mailto:info@atom8studio.com" className="text-sm text-neutral-500 hover:text-neutral-900 transition-colors">
+                    info@atom8studio.com
                   </a>
                 </div>
               </div>

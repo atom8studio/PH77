@@ -204,7 +204,7 @@ export default function AIAdminPage() {
         </section>
       </main>
 
-      <footer className="bg-neutral-950 pt-12 pb-10 border-t border-neutral-900 text-neutral-400"><div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-light"><a href="/" className="text-white font-display font-semibold text-lg">Atom8 Studio</a><div>© {new Date().getFullYear()} Atom8 Studio. All rights reserved.</div><a href="mailto:atom8studio@irisvc.co" className="hover:text-white transition-colors">atom8studio@irisvc.co</a></div></footer>
+      <footer className="bg-neutral-950 pt-12 pb-10 border-t border-neutral-900 text-neutral-400"><div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-light"><a href="/" className="text-white font-display font-semibold text-lg">Atom8 Studio</a><div>© {new Date().getFullYear()} Atom8 Studio. All rights reserved.</div><a href="mailto:info@atom8studio.com" className="hover:text-white transition-colors">info@atom8studio.com</a></div></footer>
       </div>
     </>
   );

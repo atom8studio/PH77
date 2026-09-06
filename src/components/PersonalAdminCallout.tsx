@@ -21,7 +21,7 @@ export default function PersonalAdminCallout() {
             href="/robin"
             className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 hover:bg-neutral-200 transition-colors"
           >
-            Meet Robin
+            Meet Robin, your virtual assistant
             <ArrowRight className="w-4 h-4" />
           </a>
         </motion.div>

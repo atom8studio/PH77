@@ -66,7 +66,7 @@ export default function RobinPage() {
             <div className="lg:col-span-7">
               <p className="mb-8 inline-flex rounded-full border border-[#7E9BB7]/30 bg-[#7E9BB7]/10 px-4 py-1.5 font-display text-xs font-semibold uppercase tracking-wide text-[#607D99]">For professionals and small teams</p>
               <h1 className="mb-6 font-display text-5xl font-medium leading-[1.02] tracking-tight text-neutral-950 sm:text-6xl lg:text-8xl">Your admin,<br /><span className="text-gradient">handled.</span></h1>
-              <p className="mb-8 max-w-2xl text-xl font-light leading-relaxed text-neutral-700">Robin turns simple messages into completed work: appointments, reminders, expenses, customer requests and follow-ups.</p>
+              <p className="mb-8 max-w-2xl text-xl font-light leading-relaxed text-neutral-700">Focus on what matters while Robin turns simple messages into completed work: appointments, reminders, expenses, customer requests and follow-ups.</p>
               <p className="mb-9 max-w-xl text-base font-light leading-relaxed text-neutral-500">Less admin without another dashboard. Just message Robin through the tools you already use.</p>
               <div className="flex flex-col gap-4 sm:flex-row"><a href="#contact" className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800">Tell us what Robin should handle</a><a href="#demos" className="inline-flex items-center justify-center rounded-full border border-neutral-200 px-8 py-3.5 text-sm font-medium text-neutral-900 transition-colors hover:bg-white">Watch the demos</a></div>
             </div>

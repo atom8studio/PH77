@@ -11,31 +11,26 @@ import CaseStudies from './components/CaseStudies';
 import PersonalAdminCallout from './components/PersonalAdminCallout';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import PageLogoBackdrop from './components/PageLogoBackdrop';
-import AIAdminPage from './pages/AIAdminPage';
-import VirtualAssistantLandingPage from './pages/VirtualAssistantLandingPage';
+import EngineeringDifference from './components/EngineeringDifference';
+import OperatingLayer from './components/OperatingLayer';
+import SEO from './components/SEO';
+import RobinPage from './pages/RobinPage';
 
 export default function App() {
-  if (window.location.pathname.replace(/\/$/, '') === '/ai-admin') {
-    return <AIAdminPage />;
-  }
-
-  if (window.location.pathname.replace(/\/$/, '') === '/personal-assistant') {
-    return <VirtualAssistantLandingPage />;
-  }
-
-  if (window.location.pathname.replace(/\/$/, '') === '/virtual-assistant') {
-    return <VirtualAssistantLandingPage />;
+  if (['/robin', '/ai-admin', '/personal-assistant', '/virtual-assistant'].includes(window.location.pathname.replace(/\/$/, ''))) {
+    return <RobinPage />;
   }
 
   return (
     <div className="relative isolate min-h-screen bg-neutral-50 flex flex-col">
+      <SEO title="Atom8 Studio | Build Better Operations" description="Atom8 Studio builds reliable digital operations, workflow automation and practical AI for businesses in Malaysia and ASEAN." canonical="https://atom8studio.com/" />
       <Header />
-      <PageLogoBackdrop />
       <main className="relative z-10 flex-grow pt-20">
         <Hero />
         <Expertise />
         <Services />
+        <EngineeringDifference />
+        <OperatingLayer />
         <Approach />
         <CaseStudies />
         <PersonalAdminCallout />

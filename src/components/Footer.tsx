@@ -8,7 +8,7 @@ export default function Footer() {
               <span className="font-display font-semibold text-lg text-white tracking-tight">Atom8 Studio</span>
             </div>
             <p className="max-w-xs text-sm font-light leading-relaxed mb-6">
-              We make AI boring. AI should be invisible, seamless and the way we work. 
+              We build reliable digital operations, workflow automation and practical AI for real businesses.
             </p>
           </div>
           

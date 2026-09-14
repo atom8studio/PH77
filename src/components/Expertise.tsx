@@ -1,55 +1,23 @@
 import { motion } from 'motion/react';
+import { Database, MessagesSquare, Repeat2 } from 'lucide-react';
+
+const realities = [
+  { icon: Database, title: 'Data is trapped', text: 'Critical records sit in spreadsheets with weak validation, permissions and history.' },
+  { icon: MessagesSquare, title: 'Work is fragmented', text: 'Requests and decisions move through email and chat while important context gets lost.' },
+  { icon: Repeat2, title: 'Admin keeps repeating', text: 'Teams copy, chase, reconcile and reformat the same information every week.' },
+];
 
 export default function Expertise() {
   return (
-    <section id="expertise" className="py-24 bg-neutral-50 relative overflow-hidden scroll-mt-20">
-      <div className="absolute inset-0 max-w-4xl mx-auto -z-10 opacity-30 mix-blend-multiply">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-neutral-300 rounded-full blur-3xl mix-blend-multiply" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-neutral-200 rounded-full blur-3xl mix-blend-multiply" />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div 
-          className="bg-white rounded-3xl p-8 md:p-16 border border-neutral-200 shadow-sm"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-sm font-bold tracking-widest text-neutral-400 uppercase mb-4">Our Positioning</h2>
-              <h3 className="text-3xl md:text-5xl font-display font-medium text-neutral-950 mb-6 leading-tight">
-                Adopt AI with Confidence
-              </h3>
-              <p className="text-lg text-neutral-600 font-light leading-relaxed mb-8">
-                We translate business goals into practical AI solutions, aligning strategy with seamless execution.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
-                  <div className="text-3xl font-display font-light text-neutral-900 mb-2">ROI</div>
-                  <div className="text-sm text-neutral-500">Measurable business outcomes</div>
-                </div>
-                <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
-                  <div className="text-3xl font-display font-light text-neutral-900 mb-2">Execution</div>
-                  <div className="text-sm text-neutral-500">More agile. Faster delivery</div>
-                </div>
-              </div>
-              <div className="space-y-4 lg:mt-8">
-                <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
-                  <div className="text-3xl font-display font-light text-neutral-900 mb-2">Scale</div>
-                  <div className="text-sm text-neutral-500">Built for sustainable adoption</div>
-                </div>
-                <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
-                  <div className="text-3xl font-display font-light text-neutral-900 mb-2">Partnership</div>
-                  <div className="text-sm text-neutral-500">From problem definition to deployment</div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section id="expertise" className="scroll-mt-20 bg-neutral-950 py-24 text-white">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <motion.div className="mx-auto mb-14 max-w-3xl text-center" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <p className="mb-4 font-display text-xs font-semibold uppercase tracking-widest text-[#7E9BB7]">The market reality</p>
+          <h2 className="mb-5 font-display text-3xl font-medium sm:text-4xl">Most companies do not need AI everywhere. They need operations that actually work.</h2>
+          <p className="text-lg font-light leading-relaxed text-neutral-400">AI can create leverage, but it cannot fix broken processes, unreliable data or disconnected systems by itself.</p>
         </motion.div>
+        <div className="grid gap-6 md:grid-cols-3">{realities.map(({ icon: Icon, title, text }, index) => <motion.article key={title} className="rounded-3xl border border-neutral-800 bg-neutral-900 p-7" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}><Icon className="mb-6 h-6 w-6 text-neutral-300" strokeWidth={1.5} /><h3 className="mb-3 font-display text-xl font-medium">{title}</h3><p className="font-light leading-relaxed text-neutral-400">{text}</p></motion.article>)}</div>
+        <p className="mx-auto mt-12 max-w-3xl text-center text-lg font-medium text-neutral-200">Our approach: digitise first, automate second, and apply AI where it creates clear business leverage.</p>
       </div>
     </section>
   );

@@ -4,8 +4,7 @@ import { dirname, resolve } from 'node:path';
 const dist = resolve('dist');
 const template = await readFile(resolve(dist, 'index.html'), 'utf8');
 const pages = {
-  'ai-admin': ['AI Admin Assistant for Small Businesses | Atom8 Studio', 'Robin helps Malaysian small businesses manage appointments, expenses, customer enquiries, and daily admin through WhatsApp and Telegram.'],
-  'virtual-assistant': ['Robin — Virtual AI Assistant for Busy Professionals | Atom8 Studio', 'Robin is a virtual assistant that books your calendar, sets reminders, and tracks your spending through WhatsApp or Telegram chat.'],
+  robin: ['Robin | Your Admin, Handled | Atom8 Studio', 'Robin turns messages into completed work, from appointments and reminders to expenses, customer requests and follow-ups.'],
 };
 
 for (const [route, [title, description]] of Object.entries(pages)) {

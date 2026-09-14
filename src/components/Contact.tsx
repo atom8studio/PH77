@@ -34,9 +34,9 @@ export default function Contact() {
             <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold text-neutral-800 bg-neutral-200/50 border border-neutral-300/30 mb-6 font-display uppercase tracking-wider">
               Get in Touch
             </span>
-            <h2 className="text-3xl sm:text-5xl font-display font-medium text-neutral-950 mb-6 tracking-tight">
-              Start the Conversation
-            </h2>
+            <p className="font-display text-xl sm:text-2xl font-medium text-neutral-900 leading-snug mb-6">
+              Start with one workflow. Build the foundation. Scale from there.
+            </p>
             <p className="text-neutral-600 font-light text-base leading-relaxed mb-10">
               Whether you're identifying opportunities, validating a business case, or implementing a solution, we're here to help.
             </p>

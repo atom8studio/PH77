@@ -48,7 +48,7 @@ export default function CaseStudies() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="mb-8">
-                <span className="font-mono text-xs uppercase tracking-wider text-[#607D99]">{study.client}</span>
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#607D99]">{study.client}</span>
               </div>
 
               <div className="flex-grow">

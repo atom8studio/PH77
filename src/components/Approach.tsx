@@ -59,7 +59,7 @@ export default function Approach() {
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 md:p-8 rounded-2xl bg-neutral-900 border border-neutral-800 shadow-sm transition-all hover:border-neutral-700">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-4">
                   <h3 className="text-xl font-display font-medium text-white">{tier.name}</h3>
-                  <span className="text-sm text-neutral-500 font-mono mt-1 sm:mt-0">{tier.duration}</span>
+                  <span className="text-sm text-neutral-500 mt-1 sm:mt-0">{tier.duration}</span>
                 </div>
                 <h4 className="text-sm font-medium text-neutral-300 mb-3">{tier.objective}</h4>
                 <p className="text-neutral-400 font-light leading-relaxed mb-6">

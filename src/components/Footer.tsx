@@ -39,8 +39,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-light">
           <div>&copy; {new Date().getFullYear()} Atom8 Studio. All rights reserved.</div>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/virtual-assistant/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>
       </div>

@@ -15,8 +15,12 @@ import EngineeringDifference from './components/EngineeringDifference';
 import OperatingLayer from './components/OperatingLayer';
 import SEO from './components/SEO';
 import RobinPage from './pages/RobinPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 export default function App() {
+  if (window.location.pathname.replace(/\/$/, '') === '/virtual-assistant/privacy') {
+    return <PrivacyPolicyPage />;
+  }
   if (['/robin', '/ai-admin', '/personal-assistant', '/virtual-assistant'].includes(window.location.pathname.replace(/\/$/, ''))) {
     return <RobinPage />;
   }

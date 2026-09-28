@@ -18,7 +18,7 @@ export default function Hero() {
               Strategy • Automation • Implementation
             </motion.span>
             <motion.h1 className="mb-6 font-display text-5xl font-medium leading-[1.02] tracking-tight text-neutral-950 sm:text-6xl lg:text-8xl" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-              Build Better <span className="text-gradient">Operations.</span>
+              Build Better <span className="text-gradient">Operations</span>
             </motion.h1>
             <motion.p className="mb-5 max-w-2xl text-xl font-light leading-relaxed text-neutral-700" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
               We replace fragile spreadsheets, manual handoffs and disconnected systems with reliable digital workflows, then add automation and AI where they deliver measurable value.

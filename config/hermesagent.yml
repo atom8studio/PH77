@@ -1,15 +1,15 @@
 services:
   # ==========================================
-  # HERMES AGENT 1
+  # DOBBIE
   # ==========================================
-  hermes-agent-1:
-    image: ghcr.io/hostinger/hvps-hermes-agent:latest
-    container_name: hermes_agent_1
+  hermes-agent-dobbie:
+    image: ghcr.io/lisajlau/atom8-hermes:v0.1.1
+    container_name: hermes_agent_dobbie
     restart: unless-stopped
     env_file:
       - .env
     volumes:
-      - ./data:/opt/data
+      - ./data_dobbie:/opt/data
     deploy:
       resources:
         limits:
@@ -21,14 +21,12 @@ services:
     labels:
       - "traefik.enable=false"
       - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.localhost`)"
-    tty: true
-    stdin_open: true
 
   # ==========================================
-  # HERMES AGENT 2
+  # BOB
   # ==========================================
   hermes-agent-2:
-    image: ghcr.io/hostinger/hvps-hermes-agent:latest
+    image: ghcr.io/lisajlau/atom8-hermes:v0.1.1
     container_name: hermes_agent_2
     restart: unless-stopped
     env_file:
@@ -48,16 +46,17 @@ services:
       - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.localhost`)"
 
   # ==========================================
-  # HERMES AGENT 3
+  # RUDOLPH
   # ==========================================
-  hermes-agent-3:
-    image: ghcr.io/hostinger/hvps-hermes-agent:latest
-    container_name: hermes_agent_3
+
+  hermes-agent-rudolph:
+    image: ghcr.io/lisajlau/atom8-hermes:v0.1.1
+    container_name: hermes_agent_rudolph
     restart: unless-stopped
     env_file:
       - .env
     volumes:
-      - ./data_3:/opt/data
+      - ./data_rudolph:/opt/data
     deploy:
       resources:
         limits:
@@ -71,21 +70,16 @@ services:
       - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.localhost`)"
 
   # ==========================================
-  # HERMES AGENT 4
+  # ATOM8 HERMES
   # ==========================================
-  hermes-agent-4:
-      image: ghcr.io/hostinger/hvps-hermes-agent:latest
-      container_name: hermes_agent_4
+  atom8-hermes-1:
+      image: ghcr.io/lisajlau/atom8-hermes:v0.1.1
+      container_name: atom8_hermes
       restart: unless-stopped
       env_file:
         - .env
       volumes:
-        - ./data_4:/opt/data
-        # Maps your host's projects folder into the container
-        - /home/Projects:/opt/workspace
-        - ~/.config/gh:/opt/.config/gh
-        # This mounts the host's gh tool inside Docker
-        - /usr/bin/gh:/usr/bin/gh
+        - ./data_5:/opt/data
       deploy:
         resources:
           limits:

@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { ArrowDown, ArrowRight, ShieldCheck } from 'lucide-react';
 
 const tools = ['Email', 'Calendar', 'Documents', 'CRM / ERP', 'Databases', 'Spreadsheets'];
-const workflow = ['Understand the workflow', 'Structure the data', 'Connect the systems', 'Automate the work'];
+const workflow = ['Understand the workflow', 'Structure the data', 'Connect the systems', 'Automate the work', 'Measure and iterate'];
 const safeguards = ['Human approval', 'Access control', 'Audit trails', 'Monitoring', 'Integration design', 'Training and adoption'];
 
 export default function OperatingLayer() {
@@ -30,9 +30,8 @@ export default function OperatingLayer() {
             <div className="rounded-2xl bg-neutral-950 p-6 text-white sm:p-8">
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div><p className="text-xs font-semibold uppercase tracking-widest text-[#7E9BB7]">Atom8 Studio operating layer</p><h3 className="mt-2 font-display text-2xl font-medium">From disconnected work to one reliable process</h3></div>
-                <div className="hidden h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#7E9BB7]/15 text-[#7E9BB7] sm:flex"><ShieldCheck className="h-6 w-6" /></div>
               </div>
-              <div className="grid gap-2 sm:grid-cols-4">
+              <div className="grid gap-2 sm:grid-cols-5">
                 {workflow.map((step, index) => <div key={step} className="relative rounded-xl border border-neutral-800 bg-neutral-900 p-4"><span className="mb-3 block text-xs font-semibold text-[#7E9BB7]">0{index + 1}</span><span className="text-sm leading-snug text-neutral-200">{step}</span></div>)}
               </div>
               <p className="mt-5 text-center text-xs font-medium uppercase tracking-[0.18em] text-neutral-400">Ask • Retrieve • Act • Confirm</p>

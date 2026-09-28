@@ -12,6 +12,7 @@ export default function Header({ links, ctaHref = '#contact', ctaLabel = 'Book A
     { href: '#approach', label: 'Approach' },
     { href: '#case-studies', label: 'Case Studies' },
     { href: '#contact', label: 'Contact' },
+    { href: '/robin', label: 'Robin' },
   ];
 
   return (

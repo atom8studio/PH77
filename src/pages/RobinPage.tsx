@@ -3,12 +3,6 @@ import { Bell, CalendarDays, ChevronLeft, ChevronRight, CircleDollarSign, Messag
 import Header from '../components/Header';
 import IntegrationsCarousel from '../components/IntegrationsCarousel';
 import SEO from '../components/SEO';
-import expensesVideo from '../assets/videos/Expenses.mp4';
-import meetingVideo from '../assets/videos/BookMeeting.mp4';
-import enquiryVideo from '../assets/videos/Enquiry.mp4';
-import budgetVideo from '../assets/videos/Budget.mp4';
-import calendarVideo from '../assets/videos/Calendar.mp4';
-import compareVideo from '../assets/videos/Compare.mp4';
 
 const audiences = [
   { title: 'For professionals', description: 'Keep your own day moving without juggling another task app or dashboard.', points: ['Calendar and meeting coordination', 'Reminders and follow-ups', 'Expense tracking'] },
@@ -24,12 +18,11 @@ const capabilities = [
 ];
 
 const videoDemos = [
-  { title: 'Book appointments by text', description: 'Ask Robin to find a time, book the appointment and remind everyone involved.', video: meetingVideo },
-  { title: 'Keep customer requests moving', description: 'Turn everyday questions and follow-ups into clear actions without losing the thread.', video: enquiryVideo },
-  { title: 'Update business expenses in seconds', description: 'Send a receipt or expense update by message and keep business records current.', video: expensesVideo },
-  { title: 'Keep personal expenses up to date', description: 'Log spending from a receipt or message and ask Robin for a quick total.', video: budgetVideo },
-  { title: 'Schedule your next meeting', description: 'Ask Robin to coordinate a calendar invite without opening your calendar app.', video: calendarVideo },
-  { title: 'Turn information into action', description: 'Work through everyday information and turn a question into a clear next step.', video: compareVideo },
+  { title: 'Stay on top of your inbox', description: 'Ask Robin to find, organize, and act on the emails that matter.', videoId: 'jaKjYvQehcA' },
+  { title: 'Keep personal expenses up to date', description: 'Log spending from a receipt or message and ask Robin for a quick total.', videoId: 'PWHtz619tt4' },
+  { title: 'Manage your calendar with ease', description: 'Coordinate your schedule and keep appointments moving without opening another app.', videoId: 'iZgRbztbDF4' },
+  { title: 'Analyse data in seconds', description: 'Turn everyday information into clear, useful answers and next steps.', videoId: 'eZtV7Sd7vac' },
+  { title: 'Find the information you need', description: 'Retrieve the right details quickly, without searching across multiple tools.', videoId: 'XM91NC0RFIY' },
 ];
 
 const steps = [
@@ -40,10 +33,9 @@ const steps = [
 
 export default function RobinPage() {
   const [activeVideo, setActiveVideo] = useState(0);
-  const [pendingVideo, setPendingVideo] = useState<number | null>(null);
 
   const requestVideo = (index: number) => {
-    if (index !== activeVideo) setPendingVideo(index);
+    if (index !== activeVideo) setActiveVideo(index);
   };
 
   useEffect(() => {
@@ -91,15 +83,13 @@ export default function RobinPage() {
         <section id="demos" className="scroll-mt-20 bg-white py-24">
           <div className="mx-auto max-w-5xl px-6 lg:px-8">
             <div className="mb-10 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-              <div><p className="mb-4 font-display text-xs font-semibold uppercase tracking-widest text-[#7E9BB7]">See Robin in action</p><h2 className="font-display text-3xl font-medium text-neutral-950 sm:text-4xl">Six tasks. One conversation.</h2><p className="mt-4 max-w-xl text-lg font-light leading-relaxed text-neutral-600">From one quick update to a customer request, Robin turns messages into useful action.</p></div>
+              <div><p className="mb-4 font-display text-xs font-semibold uppercase tracking-widest text-[#7E9BB7]">See Robin in action</p><h2 className="font-display text-3xl font-medium text-neutral-950 sm:text-4xl">Five tasks. One conversation.</h2><p className="mt-4 max-w-xl text-lg font-light leading-relaxed text-neutral-600">From one quick update to a customer request, Robin turns messages into useful action.</p></div>
               <div className="flex gap-2"><button type="button" onClick={() => requestVideo((activeVideo - 1 + videoDemos.length) % videoDemos.length)} aria-label="Previous demo" className="flex h-11 w-11 items-center justify-center rounded-full border border-neutral-300 text-neutral-700 transition hover:border-[#7E9BB7] hover:bg-[#7E9BB7]/10"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => requestVideo((activeVideo + 1) % videoDemos.length)} aria-label="Next demo" className="flex h-11 w-11 items-center justify-center rounded-full border border-neutral-300 text-neutral-700 transition hover:border-[#7E9BB7] hover:bg-[#7E9BB7]/10"><ChevronRight className="h-5 w-5" /></button></div>
             </div>
             <div className="grid items-center gap-8 rounded-3xl border border-neutral-200 bg-neutral-50 p-5 shadow-sm sm:p-8 md:grid-cols-[1.15fr_.85fr]">
               <div className="relative overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 shadow-sm">
-                <video key={videoDemos[activeVideo].video} controls autoPlay muted loop playsInline preload="auto" className="block w-full"><source src={videoDemos[activeVideo].video} type="video/mp4" />Your browser does not support the video tag.</video>
-                {pendingVideo !== null && <div className="absolute inset-0 flex items-center justify-center bg-neutral-950/20 backdrop-blur-[1px]"><span className="rounded-full bg-white/95 px-4 py-2 text-xs font-medium text-neutral-700 shadow-sm">Loading demo…</span></div>}
+                <div className="aspect-[9/16] max-h-[620px] bg-neutral-950"><iframe key={videoDemos[activeVideo].videoId} src={`https://www.youtube.com/embed/${videoDemos[activeVideo].videoId}?rel=0`} title={videoDemos[activeVideo].title} className="h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
               </div>
-              {pendingVideo !== null && <video key={videoDemos[pendingVideo].video} muted playsInline preload="auto" aria-hidden="true" className="sr-only" onLoadedData={() => { if (pendingVideo !== null) { setActiveVideo(pendingVideo); setPendingVideo(null); } }}><source src={videoDemos[pendingVideo].video} type="video/mp4" /></video>}
               <div><p className="mb-3 text-sm font-medium text-[#607D99]">{String(activeVideo + 1).padStart(2, '0')} / {String(videoDemos.length).padStart(2, '0')}</p><h3 className="mb-4 font-display text-2xl font-medium text-neutral-950">{videoDemos[activeVideo].title}</h3><p className="text-lg font-light leading-relaxed text-neutral-600">{videoDemos[activeVideo].description}</p><div className="mt-8 flex flex-wrap gap-2">{videoDemos.map((demo, index) => <button key={demo.title} type="button" onClick={() => requestVideo(index)} aria-label={`View ${demo.title}`} aria-current={index === activeVideo} className={`h-2 rounded-full transition-all ${index === activeVideo ? 'w-10 bg-[#7E9BB7]' : 'w-5 bg-neutral-300 hover:bg-[#7E9BB7]/60'}`} />)}</div></div>
             </div>
           </div>

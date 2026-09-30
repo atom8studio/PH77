@@ -4,7 +4,7 @@ customHeaders:
       - key: 'Strict-Transport-Security'
         value: 'max-age=31536000; includeSubDomains'
       - key: 'Content-Security-Policy'
-        value: "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https://tally.so https://*.tally.so; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://tally.so https://*.tally.so 'sha256-QAykJ46JQLTLLd/3u5x9i1B7ZzHW0Xd8pPxWmnqoQ1o='; style-src 'self' https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; frame-src https://tally.so https://*.tally.so; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://tally.so https://*.tally.so; upgrade-insecure-requests"
+        value: "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https://tally.so https://*.tally.so; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://tally.so https://*.tally.so 'sha256-QAykJ46JQLTLLd/3u5x9i1B7ZzHW0Xd8pPxWmnqoQ1o='; style-src 'self' https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; frame-src https://tally.so https://*.tally.so https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://tally.so https://*.tally.so; upgrade-insecure-requests"
       - key: 'X-Frame-Options'
         value: 'SAMEORIGIN'
       - key: 'X-Content-Type-Options'

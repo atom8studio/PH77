@@ -18,7 +18,7 @@ const capabilities = [
 ];
 
 const videoDemos = [
-  { title: 'Stay up to date with chat summaries', description: 'Ask Robin to summarize your chats so you can quickly catch up on what matters.', videoId: 'W-m6TsBE6A0' },
+  { title: 'Stay up to date with chat summaries', description: 'Ask Robin to summarize your chats so you can quickly catch up on what matters.', videoId: 'U7CImgSgAOI' },
   { title: 'Stay on top of your inbox', description: 'Ask Robin to find, organize, and act on the emails that matter.', videoId: 'jaKjYvQehcA' },
   { title: 'Keep personal expenses up to date', description: 'Log spending from a receipt or message and ask Robin for a quick total.', videoId: 'PWHtz619tt4' },
   { title: 'Manage your calendar with ease', description: 'Coordinate your schedule and keep appointments moving without opening another app.', videoId: 'iZgRbztbDF4' },

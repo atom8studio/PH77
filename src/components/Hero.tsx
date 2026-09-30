@@ -24,7 +24,7 @@ export default function Hero() {
               We replace fragile spreadsheets, manual handoffs and disconnected systems with reliable digital workflows, then add automation and AI where they deliver measurable value.
             </motion.p>
             <motion.div className="mt-9 flex flex-col gap-4 sm:flex-row" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-              <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800">Find your first workflow <ArrowRight className="h-4 w-4" /></a>
+              <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800">Robin the Assistant <ArrowRight className="h-4 w-4" /></a>
               <a href="#services" className="inline-flex items-center justify-center rounded-full border border-neutral-200 px-8 py-3.5 text-sm font-medium text-neutral-900 transition-colors hover:bg-neutral-100">See what we build</a>
             </motion.div>
           </div>

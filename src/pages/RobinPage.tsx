@@ -18,6 +18,7 @@ const capabilities = [
 ];
 
 const videoDemos = [
+  { title: 'Stay up to date with chat summaries', description: 'Ask Robin to summarize your chats so you can quickly catch up on what matters.', videoId: 'W-m6TsBE6A0' },
   { title: 'Stay on top of your inbox', description: 'Ask Robin to find, organize, and act on the emails that matter.', videoId: 'jaKjYvQehcA' },
   { title: 'Keep personal expenses up to date', description: 'Log spending from a receipt or message and ask Robin for a quick total.', videoId: 'PWHtz619tt4' },
   { title: 'Manage your calendar with ease', description: 'Coordinate your schedule and keep appointments moving without opening another app.', videoId: 'iZgRbztbDF4' },
@@ -83,7 +84,7 @@ export default function RobinPage() {
         <section id="demos" className="scroll-mt-20 bg-white py-24">
           <div className="mx-auto max-w-5xl px-6 lg:px-8">
             <div className="mb-10 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-              <div><p className="mb-4 font-display text-xs font-semibold uppercase tracking-widest text-[#7E9BB7]">See Robin in action</p><h2 className="font-display text-3xl font-medium text-neutral-950 sm:text-4xl">Five tasks. One conversation.</h2><p className="mt-4 max-w-xl text-lg font-light leading-relaxed text-neutral-600">From one quick update to a customer request, Robin turns messages into useful action.</p></div>
+              <div><p className="mb-4 font-display text-xs font-semibold uppercase tracking-widest text-[#7E9BB7]">See Robin in action</p><h2 className="font-display text-3xl font-medium text-neutral-950 sm:text-4xl">Six tasks. One conversation.</h2><p className="mt-4 max-w-xl text-lg font-light leading-relaxed text-neutral-600">From one quick update to a customer request, Robin turns messages into useful action.</p></div>
               <div className="flex gap-2"><button type="button" onClick={() => requestVideo((activeVideo - 1 + videoDemos.length) % videoDemos.length)} aria-label="Previous demo" className="flex h-11 w-11 items-center justify-center rounded-full border border-neutral-300 text-neutral-700 transition hover:border-[#7E9BB7] hover:bg-[#7E9BB7]/10"><ChevronLeft className="h-5 w-5" /></button><button type="button" onClick={() => requestVideo((activeVideo + 1) % videoDemos.length)} aria-label="Next demo" className="flex h-11 w-11 items-center justify-center rounded-full border border-neutral-300 text-neutral-700 transition hover:border-[#7E9BB7] hover:bg-[#7E9BB7]/10"><ChevronRight className="h-5 w-5" /></button></div>
             </div>
             <div className="grid items-center gap-8 rounded-3xl border border-neutral-200 bg-neutral-50 p-5 shadow-sm sm:p-8 md:grid-cols-[1.15fr_.85fr]">

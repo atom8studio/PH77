@@ -4,17 +4,24 @@ import { CheckCircle2 } from 'lucide-react';
 const cases = [
   {
     client: 'Media Tech',
-    challenge: 'Financial workflows and reporting were manual, while internal coordination relied heavily on Excel and other manual processes. This led to missed opportunities and constrained the company’s growth.',
-    solution: 'Built an integrated operations system aligned with internal processes to manage campaign performance reporting, reconciliation, invoicing and commissions.',
-    outcomes: ['3x faster execution', 'Fewer manual errors', 'Clearer operational visibility'],
-    tags: ['Financial Operations', 'Reporting', 'Workflow Automation'],
+    challenge: 'Financial workflows and reporting were manual, while internal coordination and KOL contacts relied heavily on Excel and other manual processes. This led to missed opportunities, lost relationships when staff left and constrained the company’s growth.',
+    solution: 'Built an integrated operations system aligned with internal processes to manage campaign performance reporting, reconciliation, invoicing, commissions and a centralised KOL contact database.',
+    outcomes: ['3x faster execution', 'Fewer manual errors', 'KOL relationships retained across team changes'],
+    tags: ['Financial Operations', 'KOL Management', 'Workflow Automation'],
   },
   {
     client: 'Logistics',
-    challenge: 'Procurement, supplier management, transaction reconciliation and budget reporting were handled manually, making everyday operations slow and difficult to track.',
-    solution: 'Built a procurement and supplier management workflow that stores and centralises supplier information, enabling teams to evaluate and select suppliers quickly with AI assistance.',
-    outcomes: ['Faster supplier evaluation', 'Clearer operational visibility', 'Scalable operations'],
+    challenge: 'Procurement, supplier management, transaction reconciliation and budget reporting were handled manually, making everyday operations slow and difficult to track. Critical knowledge could also be lost when team members left, making handovers difficult.',
+    solution: 'Built a procurement and supplier management workflow that centralises supplier information and operational knowledge, enabling teams to evaluate and select suppliers quickly with AI assistance and hand work over with ease.',
+    outcomes: ['Faster supplier evaluation', 'No knowledge lost during team changes', 'Easier handovers'],
     tags: ['Procurement', 'Supplier Management', 'AI Assistance'],
+  },
+  {
+    client: 'F&B',
+    challenge: 'Inventory counts were recorded and stored manually, making it difficult to maintain an accurate view of stock, purchases, revenue and costs.',
+    solution: 'Built an inventory app integrated with an AI assistant to capture inventory counts, track purchases and produce weekly revenue and cost reports.',
+    outcomes: ['Accurate inventory records', 'Purchases tracked in one place', 'Weekly revenue and cost visibility'],
+    tags: ['Inventory Management', 'AI Assistant', 'Weekly Reporting'],
   },
   {
     client: 'Personal Admin',

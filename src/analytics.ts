@@ -1,5 +1,6 @@
 const measurementId = 'G-7XS9J9V707';
 const googleAdsId = 'AW-18543484190';
+const pageViewConversionId = 'AW-18543484190/gH2BCNyepbAdEJ66nIpF';
 
 declare global {
   interface Window {
@@ -15,6 +16,9 @@ window.gtag = (...args: unknown[]) => {
 window.gtag('js', new Date());
 window.gtag('config', measurementId);
 window.gtag('config', googleAdsId);
+window.gtag('event', 'conversion', {
+  send_to: pageViewConversionId,
+});
 
 const scriptSrc = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
 if (!document.querySelector(`script[src="${scriptSrc}"]`)) {

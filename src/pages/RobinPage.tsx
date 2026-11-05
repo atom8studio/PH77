@@ -56,7 +56,7 @@ export default function RobinPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
-      <SEO title="Robin | Your Admin, Handled | Atom8 Studio" description="Robin turns messages into completed work, from appointments and reminders to expenses, customer requests and follow-ups." canonical="https://atom8studio.com/robin" />
+      <SEO title="Robin AI Agent for Business Workflow Automation | Atom8 Studio" description="Robin is an AI agent for business workflow automation, handling appointments, reminders, expenses, customer requests, invoices and follow-ups." canonical="https://atom8studio.com/robin" />
       <Header links={[{ href: '#who', label: 'Who it helps' }, { href: '#capabilities', label: 'Capabilities' }, { href: '#demos', label: 'Demos' }]} ctaLabel="Get started" />
 
       <main className="pt-20">

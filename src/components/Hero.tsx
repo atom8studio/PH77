@@ -21,7 +21,7 @@ export default function Hero() {
               Build Better <span className="text-gradient">Operations</span>
             </motion.h1>
             <motion.p className="mb-5 max-w-2xl text-xl font-light leading-relaxed text-neutral-700" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-              We replace fragile spreadsheets, manual handoffs and disconnected systems with reliable digital workflows, then add automation and AI where they deliver measurable value.
+              We build business and workflow automation software that replaces fragile spreadsheets, manual handoffs and disconnected systems with reliable digital workflows, then adds automation and AI where they deliver measurable value.
             </motion.p>
             <motion.div className="mt-9 flex flex-col gap-4 sm:flex-row" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
               <a href="/robin" className="inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800">Robin the Assistant <ArrowRight className="h-4 w-4" /></a>

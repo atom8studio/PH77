@@ -4,7 +4,7 @@ import { dirname, resolve } from 'node:path';
 const dist = resolve('dist');
 const template = await readFile(resolve(dist, 'index.html'), 'utf8');
 const pages = {
-  robin: ['Robin | Your Admin, Handled | Atom8 Studio', 'Robin turns messages into completed work, from appointments and reminders to expenses, customer requests and follow-ups.'],
+  robin: ['Robin AI Agent for Business Workflow Automation | Atom8 Studio', 'Robin is an AI agent for business workflow automation, handling appointments, reminders, expenses, customer requests, invoices and follow-ups.'],
 };
 
 for (const [route, [title, description]] of Object.entries(pages)) {

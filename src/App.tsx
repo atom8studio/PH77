@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <div className="relative isolate min-h-screen bg-neutral-50 flex flex-col">
-      <SEO title="Atom8 Studio | Build Better Operations" description="Atom8 Studio builds reliable digital operations, workflow automation and practical AI for businesses in Malaysia and ASEAN." canonical="https://atom8studio.com/" />
+      <SEO title="Business & Workflow Automation Software | Atom8 Studio" description="Atom8 Studio builds business and workflow automation software, CRM workflows, AI agents, and document and invoice automation for businesses in Malaysia and ASEAN." canonical="https://atom8studio.com/" />
       <Header />
       <main className="relative z-10 flex-grow pt-20">
         <Hero />

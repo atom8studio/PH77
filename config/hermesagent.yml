@@ -78,8 +78,13 @@ services:
       restart: unless-stopped
       env_file:
         - .env
+      environment:
+        - BROWSER_USE_USER_DATA_DIR=/opt/hermes/browser-profile
       volumes:
         - ./data_5:/opt/data
+        - ./hermes-credentials:/opt/hermes-credentials
+        - hermes-playwright:/opt/hermes/.playwright
+        - hermes-browser-profile:/opt/hermes/browser-profile
       deploy:
         resources:
           limits:
@@ -91,3 +96,7 @@ services:
       labels:
         - "traefik.enable=false"
         - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.localhost`)"
+
+volumes:
+  hermes-playwright:
+  hermes-browser-profile:

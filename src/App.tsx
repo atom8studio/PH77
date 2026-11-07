@@ -5,6 +5,7 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import Industries from './components/Industries';
 import Expertise from './components/Expertise';
 import Approach from './components/Approach';
 import CaseStudies from './components/CaseStudies';
@@ -33,6 +34,7 @@ export default function App() {
         <Hero />
         <Expertise />
         <Services />
+        <Industries />
         <EngineeringDifference />
         <OperatingLayer />
         <Approach />

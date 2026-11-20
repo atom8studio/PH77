@@ -4,9 +4,10 @@ type HeaderProps = {
   links?: Array<{ href: string; label: string }>;
   ctaHref?: string;
   ctaLabel?: string;
+  showCta?: boolean;
 };
 
-export default function Header({ links, ctaHref = '#contact', ctaLabel = 'Book Assessment' }: HeaderProps) {
+export default function Header({ links, ctaHref = '#contact', ctaLabel = 'Book Assessment', showCta = true }: HeaderProps) {
   const navLinks = links ?? [
     { href: '#services', label: 'Services' },
     { href: '#approach', label: 'Approach' },
@@ -35,11 +36,11 @@ export default function Header({ links, ctaHref = '#contact', ctaLabel = 'Book A
           {navLinks.map(link => <a key={link.href} href={link.href} className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">{link.label}</a>)}
         </nav>
         
-        <div className="flex items-center">
+        {showCta && <div className="flex items-center">
           <a href={ctaHref} className="text-sm font-medium text-white bg-neutral-950 px-5 py-2.5 rounded-full hover:bg-neutral-800 transition-colors">
             {ctaLabel}
           </a>
-        </div>
+        </div>}
       </div>
     </header>
   );

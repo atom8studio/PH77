@@ -5,6 +5,7 @@ const dist = resolve('dist');
 const template = await readFile(resolve(dist, 'index.html'), 'utf8');
 const pages = {
   robin: ['Robin AI Agent for Business Workflow Automation | Atom8 Studio', 'Robin is an AI agent for business workflow automation, handling appointments, reminders, expenses, customer requests, invoices and follow-ups.'],
+  'cvss-calc': ['CVSS v4.0 Base Score Calculator | Atom8 Studio', 'Calculate CVSS v4.0 Base Scores using the standard technical severity metrics.'],
 };
 
 for (const [route, [title, description]] of Object.entries(pages)) {

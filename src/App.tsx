@@ -17,6 +17,7 @@ import OperatingLayer from './components/OperatingLayer';
 import SEO from './components/SEO';
 import RobinPage from './pages/RobinPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import CvssCalculatorPage from './pages/CvssCalculatorPage';
 
 export default function App() {
   if (window.location.pathname.replace(/\/$/, '') === '/virtual-assistant/privacy') {
@@ -24,6 +25,9 @@ export default function App() {
   }
   if (['/robin', '/ai-admin', '/personal-assistant', '/virtual-assistant'].includes(window.location.pathname.replace(/\/$/, ''))) {
     return <RobinPage />;
+  }
+  if (window.location.pathname.replace(/\/$/, '') === '/cvss-calc') {
+    return <CvssCalculatorPage />;
   }
 
   return (

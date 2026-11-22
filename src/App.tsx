@@ -13,7 +13,6 @@ import PersonalAdminCallout from './components/PersonalAdminCallout';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import EngineeringDifference from './components/EngineeringDifference';
-import OperatingLayer from './components/OperatingLayer';
 import SEO from './components/SEO';
 import RobinPage from './pages/RobinPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
@@ -40,7 +39,6 @@ export default function App() {
         <Services />
         <Industries />
         <EngineeringDifference />
-        <OperatingLayer />
         <Approach />
         <CaseStudies />
         <PersonalAdminCallout />

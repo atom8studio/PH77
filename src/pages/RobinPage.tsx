@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Bell, CalendarDays, ChevronLeft, ChevronRight, CircleDollarSign, MessageCircleMore, UsersRound } from 'lucide-react';
 import Header from '../components/Header';
 import IntegrationsCarousel from '../components/IntegrationsCarousel';
+import OperatingLayer from '../components/OperatingLayer';
 import SEO from '../components/SEO';
 
 const audiences = [
@@ -80,6 +81,8 @@ export default function RobinPage() {
         </section>
 
         <section id="who" className="scroll-mt-20 bg-white py-24"><div className="mx-auto max-w-7xl px-6 lg:px-8"><div className="mb-14 max-w-2xl"><p className="mb-4 font-display text-xs font-semibold uppercase tracking-widest text-[#7E9BB7]">Who Robin helps</p><h2 className="mb-5 font-display text-3xl font-medium text-neutral-950 sm:text-4xl">One conversation, built around the work you do.</h2><p className="text-lg font-light leading-relaxed text-neutral-600">Robin works for people who need less to remember and teams who need everyday work to keep moving.</p></div><div className="grid gap-6 md:grid-cols-2">{audiences.map((audience) => <article key={audience.title} className="rounded-3xl border border-neutral-200 bg-neutral-50 p-8"><h3 className="mb-3 font-display text-2xl font-medium">{audience.title}</h3><p className="mb-7 leading-relaxed text-neutral-600">{audience.description}</p><ul className="space-y-3">{audience.points.map((point) => <li key={point} className="flex items-start gap-3 text-sm leading-relaxed text-neutral-700"><span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#7E9BB7]" />{point}</li>)}</ul></article>)}</div></div></section>
+
+        <OperatingLayer />
 
         <section id="privacy" className="scroll-mt-20 bg-[#7E9BB7]/10 py-24"><div className="mx-auto max-w-5xl px-6 lg:px-8"><div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-start"><div><p className="mb-4 font-display text-xs font-semibold uppercase tracking-widest text-[#607D99]">Privacy by design</p><h2 className="font-display text-3xl font-medium text-neutral-950 sm:text-4xl">Your data, your privacy.</h2></div><div><p className="mb-8 text-lg font-light leading-relaxed text-neutral-700">Absolutely, privacy is a core part of how we’ve designed our agent.</p><ul className="space-y-4"><li className="rounded-2xl border border-white/70 bg-white/80 p-4 text-neutral-700">We <strong>never sell your personal data</strong>.</li><li className="rounded-2xl border border-white/70 bg-white/80 p-4 text-neutral-700">We <strong>do not use your data to train AI models</strong>.</li><li className="rounded-2xl border border-white/70 bg-white/80 p-4 text-neutral-700">Your information is stored in a private, access-controlled environment.</li><li className="rounded-2xl border border-white/70 bg-white/80 p-4 text-neutral-700">Your data is only processed as needed to provide the AI assistant’s services.</li></ul><p className="mt-8 font-display text-xl font-medium text-neutral-950">Your data stays yours.</p></div></div></div></section>
 

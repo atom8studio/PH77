@@ -97,6 +97,11 @@ export default function CvssCalculatorPage() {
             <button type="button" onClick={() => setGuideOpen(true)} className="mt-8 inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-6 py-3 text-sm font-medium text-neutral-900 transition hover:bg-neutral-100"><CircleHelp size={17} className="text-[#607D99]" />How this calculator works</button>
           </div>
 
+          <section className="mb-12 max-w-3xl" aria-labelledby="cvss-video-title">
+            <h2 id="cvss-video-title" className="mb-4 font-display text-2xl font-semibold text-neutral-950">Web Security 101: OWASP Top 10</h2>
+            <div className="aspect-video overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 shadow-sm"><iframe className="h-full w-full" src="https://www.youtube-nocookie.com/embed/bBvqhmqbNf0?rel=0" title="Web Security 101: OWASP Top 10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div>
+          </section>
+
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
           <div className="space-y-6">
             {metricGroups.map(group => (
